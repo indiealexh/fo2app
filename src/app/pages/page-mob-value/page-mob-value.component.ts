@@ -1,5 +1,11 @@
 import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
-import { AllCommunityModule, ColDef, ModuleRegistry, themeQuartz } from 'ag-grid-community';
+import {
+  AllCommunityModule,
+  ColDef,
+  ModuleRegistry,
+  SizeColumnsToContentStrategy,
+  themeQuartz
+} from 'ag-grid-community';
 import { MobDataService } from '../../services/mob-data.service';
 import { AgGridAngular } from 'ag-grid-angular';
 import { Drop } from '../../models/mobs';
@@ -27,6 +33,10 @@ export class PageMobValueComponent {
 
   mobData = inject(MobDataService);
 
+  autoSizeStrategy: SizeColumnsToContentStrategy = {
+    type: 'fitCellContents'
+  };
+
   constructor() {
     effect(() => {
       const data = this.mobData.mobData.value();
@@ -36,7 +46,7 @@ export class PageMobValueComponent {
           const goldAvg = (m.goldMin ?? 0) + (m.goldMax ?? 0) / 2;
           const dropValue = m.drops ? this.itemValueChangeToGold(m.drops) : 0;
           const overallAvgValue = dropValue + goldAvg;
-          const valuePerHp =  overallAvgValue / (m.health ?? 0);
+          const valuePerHp = overallAvgValue / (m.health ?? 0);
           return ({
             name: m.name,
             goldMin: m.goldMin,
