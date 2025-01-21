@@ -4,3 +4,10 @@
   height: 100%;
   width: 100%;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  flex: 0 0 auto;
+}

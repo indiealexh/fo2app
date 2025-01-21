@@ -1,8 +1,11 @@
-<header>FO2.app</header>
+<header>
+  <div><img src="./f2logo.png" alt="FO2.app Logo" height="64"></div>
+  FO2.app
+</header>
 <ag-grid-angular
   style="width: 100%; height: 100%;"
   [rowData]="rowData()"
-  [columnDefs]="colDefs"></ag-grid-angular>
+  [columnDefs]="colDefs" [theme]="myTheme"></ag-grid-angular>
 
 
 <router-outlet/>

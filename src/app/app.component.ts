@@ -7,6 +7,10 @@ import { Drop } from './models/mobs';
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
+import { themeQuartz } from 'ag-grid-community';
+
+
+
 
 @Component({
   selector: 'fo2tools-root',
@@ -43,6 +47,16 @@ export class AppComponent {
       }
     });
   }
+
+  // to use myTheme in an application, pass it to the theme grid option
+  myTheme = themeQuartz
+    .withParams({
+      backgroundColor: "#0E0B1C",
+      fontFamily: {
+        googleFont: "IBM Plex Mono"
+      },
+      foregroundColor: "#F1F1F1"
+    });
 
   itemValueChangeToGold(drops: Drop[]) {
     let gold = 0;
