@@ -1,3 +1,5 @@
+<label for="dps-tb">Player DPS</label>
+<input id="dps-tb" type="number" [ngModel]="dps()" (ngModelChange)="dps.set($event)">
 <ag-grid-angular
   style="width: 100%; height: 100%;"
   [rowData]="rowData()"
