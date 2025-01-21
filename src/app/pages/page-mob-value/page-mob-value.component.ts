@@ -55,9 +55,9 @@ export class PageMobValueComponent {
             hp: m.health,
             goldPerHp: goldAvg / (m.health ?? 0),
             dropValue: dropValue,
-            overallAvgValue: overallAvgValue,
-            valuePerHp: valuePerHp,
-            valuePerSecond: valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1)),
+            overallAvgValue: this.roundNum(overallAvgValue),
+            valuePerHp: this.roundNum(valuePerHp),
+            valuePerSecond: this.roundNum(valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1))),
           })
         }) as MobRow[]);
       }
@@ -73,6 +73,10 @@ export class PageMobValueComponent {
       },
       foregroundColor: "#F1F1F1"
     });
+
+  roundNum(num: number) {
+    return parseFloat(num.toFixed(4));
+  }
 
   itemValueChangeToGold(drops: Drop[]) {
     let gold = 0;
