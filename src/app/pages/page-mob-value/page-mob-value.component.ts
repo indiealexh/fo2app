@@ -51,8 +51,9 @@ export class PageMobValueComponent {
           const overallAvgValue = dropValue + goldAvg;
           const valuePerHp = overallAvgValue / (m.health ?? 0);
           const region = m.locations?.at(0)?.area?.name ?? "Unknown";
-          const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0
+          const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0;
           return ({
+            id: m.id,
             name: m.name,
             region: region,
             level: m.level,
@@ -104,6 +105,9 @@ export class PageMobValueComponent {
 
   calcXPDrop(mobLevel: number, playerLevel: number) {
     const lvlDiff = mobLevel - playerLevel;
+    if (lvlDiff > 10) {
+      return 0;
+    }
     // This only works accurately when the players level is less than the mobs, but close enough for now
     const xpAdjustPercent = Math.min(Math.max(0.05 * lvlDiff, -1), 1);
     console.debug(`xpAdjustPercent: ${xpAdjustPercent}`);
@@ -134,12 +138,13 @@ export class PageMobValueComponent {
   ];
 
   getRowId: GetRowIdFunc = (params: GetRowIdParams) =>
-    String(params.data.name);
+    String(params.data.id);
 
 
 }
 
 export interface MobRow {
+  id: number;
   name: string;
   region: string;
   level: number;
