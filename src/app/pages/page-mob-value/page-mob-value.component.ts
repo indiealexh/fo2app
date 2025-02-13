@@ -2,6 +2,8 @@ import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@ang
 import {
   AllCommunityModule,
   ColDef,
+  GetRowIdFunc,
+  GetRowIdParams,
   ModuleRegistry,
   SizeColumnsToContentStrategy,
   themeQuartz
@@ -54,16 +56,16 @@ export class PageMobValueComponent {
             name: m.name,
             region: region,
             level: m.level,
+            hp: m.health,
             goldMin: m.goldMin,
             goldMax: m.goldMax,
             goldAvg: goldAvg,
-            hp: m.health,
             goldPerHp: goldAvg / (m.health ?? 0),
             dropValue: dropValue,
             overallAvgValue: this.roundNum(overallAvgValue),
             valuePerHp: this.roundNum(valuePerHp),
             valuePerSecond: this.roundNum(valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1))),
-            xptohpratio: this.roundNum((m.level ?? 0) / (m.health ?? 0)),
+            xptohpratio: this.roundNum(this.roundNum(this.calcXPDrop(m.level ?? 0, this.lvl())) / (m.health ?? 0)),
             baseXp: baseXP,
             estXP: this.roundNum(this.calcXPDrop(m.level ?? 0, this.lvl())),
           })
@@ -103,7 +105,7 @@ export class PageMobValueComponent {
   calcXPDrop(mobLevel: number, playerLevel: number) {
     const lvlDiff = mobLevel - playerLevel;
     // This only works accurately when the players level is less than the mobs, but close enough for now
-    const xpAdjustPercent = Math.min(Math.max(0.05 * lvlDiff,-1),1);
+    const xpAdjustPercent = Math.min(Math.max(0.05 * lvlDiff, -1), 1);
     console.debug(`xpAdjustPercent: ${xpAdjustPercent}`);
     const baseXp = this.calcBaseXP(mobLevel);
     return Math.round(baseXp + (baseXp * xpAdjustPercent));
@@ -119,17 +121,20 @@ export class PageMobValueComponent {
     {field: "level", filter: true},
     {field: "baseXp", filter: true},
     {field: "estXP", filter: true},
+    {field: "hp", filter: true},
+    {field: "xptohpratio", filter: true},
     {field: "goldMin"},
     {field: "goldMax"},
     {field: "goldAvg"},
-    {field: "hp", filter: true},
     {field: "goldPerHp", filter: true},
     {field: "dropValue", filter: true},
     {field: "overallAvgValue", filter: true},
     {field: "valuePerHp", filter: true},
     {field: "valuePerSecond", filter: true},
-    {field: "xptohpratio", filter: true},
   ];
+
+  getRowId: GetRowIdFunc = (params: GetRowIdParams) =>
+    String(params.data.name);
 
 
 }
