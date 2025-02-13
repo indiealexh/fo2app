@@ -9846,19 +9846,6 @@
         },
         {
           "mobId": 106,
-          "itemId": 665,
-          "dropRate": 25,
-          "count": 1,
-          "item": {
-            "id": 665,
-            "spriteName": "weapon-bfg",
-            "name": "BFG",
-            "sellPrice": 5000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 106,
           "itemId": 664,
           "dropRate": 25,
           "count": 1,
@@ -9866,6 +9853,19 @@
             "id": 664,
             "spriteName": "weapon-dark-rapier",
             "name": "Dark Rapier",
+            "sellPrice": 5000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 106,
+          "itemId": 665,
+          "dropRate": 25,
+          "count": 1,
+          "item": {
+            "id": 665,
+            "spriteName": "weapon-bfg",
+            "name": "BFG",
             "sellPrice": 5000,
             "sellPriceUnit": "COINS"
           }
@@ -9953,32 +9953,6 @@
         },
         {
           "mobId": 107,
-          "itemId": 666,
-          "dropRate": 25,
-          "count": 1,
-          "item": {
-            "id": 666,
-            "spriteName": "weapon-evil-wand",
-            "name": "Evil Wand",
-            "sellPrice": 5000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 107,
-          "itemId": 664,
-          "dropRate": 25,
-          "count": 1,
-          "item": {
-            "id": 664,
-            "spriteName": "weapon-dark-rapier",
-            "name": "Dark Rapier",
-            "sellPrice": 5000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 107,
           "itemId": 847,
           "dropRate": 100,
           "count": 1,
@@ -9999,6 +9973,32 @@
             "id": 665,
             "spriteName": "weapon-bfg",
             "name": "BFG",
+            "sellPrice": 5000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 107,
+          "itemId": 664,
+          "dropRate": 25,
+          "count": 1,
+          "item": {
+            "id": 664,
+            "spriteName": "weapon-dark-rapier",
+            "name": "Dark Rapier",
+            "sellPrice": 5000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 107,
+          "itemId": 666,
+          "dropRate": 25,
+          "count": 1,
+          "item": {
+            "id": 666,
+            "spriteName": "weapon-evil-wand",
+            "name": "Evil Wand",
             "sellPrice": 5000,
             "sellPriceUnit": "COINS"
           }
@@ -10073,19 +10073,6 @@
         },
         {
           "mobId": 108,
-          "itemId": 677,
-          "dropRate": 30,
-          "count": 1,
-          "item": {
-            "id": 677,
-            "spriteName": "crafting-unobtainium-chunk",
-            "name": "Unobtainium Chunk",
-            "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 108,
           "itemId": 291,
           "dropRate": 5,
           "count": 1,
@@ -10093,6 +10080,19 @@
             "id": 291,
             "spriteName": "emerald",
             "name": "Emerald",
+            "sellPrice": 1000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 108,
+          "itemId": 677,
+          "dropRate": 30,
+          "count": 1,
+          "item": {
+            "id": 677,
+            "spriteName": "crafting-unobtainium-chunk",
+            "name": "Unobtainium Chunk",
             "sellPrice": 1000,
             "sellPriceUnit": "COINS"
           }
@@ -10295,19 +10295,6 @@
         },
         {
           "mobId": 109,
-          "itemId": 695,
-          "dropRate": 50,
-          "count": 1,
-          "item": {
-            "id": 695,
-            "spriteName": "crafting-candy-green",
-            "name": "Sour Surge Candy",
-            "sellPrice": 250,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 109,
           "itemId": 715,
           "dropRate": 65,
           "count": 1,
@@ -10315,6 +10302,19 @@
             "id": 715,
             "spriteName": "item-crab-claw-spectral",
             "name": "Spectral Crab Claw",
+            "sellPrice": 250,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 109,
+          "itemId": 695,
+          "dropRate": 50,
+          "count": 1,
+          "item": {
+            "id": 695,
+            "spriteName": "crafting-candy-green",
+            "name": "Sour Surge Candy",
             "sellPrice": 250,
             "sellPriceUnit": "COINS"
           }
@@ -10749,19 +10749,6 @@
       "drops": [
         {
           "mobId": 113,
-          "itemId": 428,
-          "dropRate": 100,
-          "count": 1,
-          "item": {
-            "id": 428,
-            "spriteName": "item-bat-wing",
-            "name": "Bat Wing",
-            "sellPrice": 50,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 113,
           "itemId": 335,
           "dropRate": 50,
           "count": 1,
@@ -10769,6 +10756,19 @@
             "id": 335,
             "spriteName": "consumable-fun-size-candy",
             "name": "Fun Sized Candy Bar",
+            "sellPrice": 50,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 113,
+          "itemId": 428,
+          "dropRate": 100,
+          "count": 1,
+          "item": {
+            "id": 428,
+            "spriteName": "item-bat-wing",
+            "name": "Bat Wing",
             "sellPrice": 50,
             "sellPriceUnit": "COINS"
           }
@@ -11203,19 +11203,6 @@
         },
         {
           "mobId": 117,
-          "itemId": 694,
-          "dropRate": 100,
-          "count": 3,
-          "item": {
-            "id": 694,
-            "spriteName": "crafting-candy-red",
-            "name": "Molten Melt Candy",
-            "sellPrice": 250,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 117,
           "itemId": 695,
           "dropRate": 100,
           "count": 3,
@@ -11223,6 +11210,19 @@
             "id": 695,
             "spriteName": "crafting-candy-green",
             "name": "Sour Surge Candy",
+            "sellPrice": 250,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 117,
+          "itemId": 694,
+          "dropRate": 100,
+          "count": 3,
+          "item": {
+            "id": 694,
+            "spriteName": "crafting-candy-red",
+            "name": "Molten Melt Candy",
             "sellPrice": 250,
             "sellPriceUnit": "COINS"
           }
@@ -11284,13 +11284,13 @@
       "drops": [
         {
           "mobId": 118,
-          "itemId": 694,
+          "itemId": 693,
           "dropRate": 100,
           "count": 5,
           "item": {
-            "id": 694,
-            "spriteName": "crafting-candy-red",
-            "name": "Molten Melt Candy",
+            "id": 693,
+            "spriteName": "crafting-candy-blue",
+            "name": "Berry Burst Candy",
             "sellPrice": 250,
             "sellPriceUnit": "COINS"
           }
@@ -11310,13 +11310,13 @@
         },
         {
           "mobId": 118,
-          "itemId": 693,
+          "itemId": 694,
           "dropRate": 100,
           "count": 5,
           "item": {
-            "id": 693,
-            "spriteName": "crafting-candy-blue",
-            "name": "Berry Burst Candy",
+            "id": 694,
+            "spriteName": "crafting-candy-red",
+            "name": "Molten Melt Candy",
             "sellPrice": 250,
             "sellPriceUnit": "COINS"
           }
@@ -11613,19 +11613,6 @@
         },
         {
           "mobId": 121,
-          "itemId": 816,
-          "dropRate": 30,
-          "count": 1,
-          "item": {
-            "id": 816,
-            "spriteName": "weapon-dark-flame-wand",
-            "name": "Dark Flame Wand",
-            "sellPrice": 5000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 121,
           "itemId": 814,
           "dropRate": 30,
           "count": 1,
@@ -11646,6 +11633,19 @@
             "id": 818,
             "spriteName": "weapon-zambatou",
             "name": "Zambatou",
+            "sellPrice": 5000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 121,
+          "itemId": 816,
+          "dropRate": 30,
+          "count": 1,
+          "item": {
+            "id": 816,
+            "spriteName": "weapon-dark-flame-wand",
+            "name": "Dark Flame Wand",
             "sellPrice": 5000,
             "sellPriceUnit": "COINS"
           }
@@ -12401,19 +12401,6 @@
         },
         {
           "mobId": 128,
-          "itemId": 1051,
-          "dropRate": 40,
-          "count": 1,
-          "item": {
-            "id": 1051,
-            "spriteName": "crafting-gemstone-box",
-            "name": "Gemstone Box",
-            "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 128,
           "itemId": 1052,
           "dropRate": 5,
           "count": 1,
@@ -12421,6 +12408,19 @@
             "id": 1052,
             "spriteName": "crafting-gold-skull-chunk-jaw",
             "name": "Gold Skull Jaw Piece",
+            "sellPrice": 1000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 128,
+          "itemId": 1051,
+          "dropRate": 40,
+          "count": 1,
+          "item": {
+            "id": 1051,
+            "spriteName": "crafting-gemstone-box",
+            "name": "Gemstone Box",
             "sellPrice": 1000,
             "sellPriceUnit": "COINS"
           }
@@ -12499,19 +12499,6 @@
       "drops": [
         {
           "mobId": 129,
-          "itemId": 920,
-          "dropRate": 65,
-          "count": 1,
-          "item": {
-            "id": 920,
-            "spriteName": "item-blue-fire",
-            "name": "Blue Flame",
-            "sellPrice": 750,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 129,
           "itemId": 935,
           "dropRate": 35,
           "count": 1,
@@ -12519,6 +12506,19 @@
             "id": 935,
             "spriteName": "item-mirky-potion-energy",
             "name": "Mirky Energy Potion",
+            "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 129,
+          "itemId": 920,
+          "dropRate": 65,
+          "count": 1,
+          "item": {
+            "id": 920,
+            "spriteName": "item-blue-fire",
+            "name": "Blue Flame",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -12914,19 +12914,6 @@
         },
         {
           "mobId": 133,
-          "itemId": 945,
-          "dropRate": 8,
-          "count": 1,
-          "item": {
-            "id": 945,
-            "spriteName": "weapon-shield-forest",
-            "name": "Forest Shield",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 133,
           "itemId": 952,
           "dropRate": 8,
           "count": 1,
@@ -12934,6 +12921,19 @@
             "id": 952,
             "spriteName": "weapon-sword-mossy",
             "name": "Mossy Sword",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 133,
+          "itemId": 945,
+          "dropRate": 8,
+          "count": 1,
+          "item": {
+            "id": 945,
+            "spriteName": "weapon-shield-forest",
+            "name": "Forest Shield",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -13008,19 +13008,6 @@
         },
         {
           "mobId": 134,
-          "itemId": 926,
-          "dropRate": 30,
-          "count": 1,
-          "item": {
-            "id": 926,
-            "spriteName": "item-lost-relic",
-            "name": "Lost Relic",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 134,
           "itemId": 937,
           "dropRate": 80,
           "count": 1,
@@ -13028,6 +13015,19 @@
             "id": 937,
             "spriteName": "item-secret-stone-message",
             "name": "Secret Stone Message",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 134,
+          "itemId": 926,
+          "dropRate": 30,
+          "count": 1,
+          "item": {
+            "id": 926,
+            "spriteName": "item-lost-relic",
+            "name": "Lost Relic",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -14035,19 +14035,6 @@
         },
         {
           "mobId": 145,
-          "itemId": 926,
-          "dropRate": 25,
-          "count": 1,
-          "item": {
-            "id": 926,
-            "spriteName": "item-lost-relic",
-            "name": "Lost Relic",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 145,
           "itemId": 925,
           "dropRate": 100,
           "count": 1,
@@ -14055,6 +14042,19 @@
             "id": 925,
             "spriteName": "item-lost-key",
             "name": "Lost Key",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 145,
+          "itemId": 926,
+          "dropRate": 25,
+          "count": 1,
+          "item": {
+            "id": 926,
+            "spriteName": "item-lost-relic",
+            "name": "Lost Relic",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -14155,6 +14155,19 @@
         },
         {
           "mobId": 146,
+          "itemId": 997,
+          "dropRate": 1,
+          "count": 1,
+          "item": {
+            "id": 997,
+            "spriteName": "item-holiday-star",
+            "name": "Holiday Spirit",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 146,
           "itemId": 999,
           "dropRate": 0.5,
           "count": 1,
@@ -14175,19 +14188,6 @@
             "id": 998,
             "spriteName": "ring-wreath",
             "name": "Wreath Ring",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 146,
-          "itemId": 997,
-          "dropRate": 1,
-          "count": 1,
-          "item": {
-            "id": 997,
-            "spriteName": "item-holiday-star",
-            "name": "Holiday Spirit",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -14275,19 +14275,6 @@
         },
         {
           "mobId": 147,
-          "itemId": 997,
-          "dropRate": 1,
-          "count": 1,
-          "item": {
-            "id": 997,
-            "spriteName": "item-holiday-star",
-            "name": "Holiday Spirit",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 147,
           "itemId": 999,
           "dropRate": 0.5,
           "count": 1,
@@ -14308,6 +14295,19 @@
             "id": 998,
             "spriteName": "ring-wreath",
             "name": "Wreath Ring",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 147,
+          "itemId": 997,
+          "dropRate": 1,
+          "count": 1,
+          "item": {
+            "id": 997,
+            "spriteName": "item-holiday-star",
+            "name": "Holiday Spirit",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -14515,19 +14515,6 @@
         },
         {
           "mobId": 149,
-          "itemId": 997,
-          "dropRate": 1,
-          "count": 1,
-          "item": {
-            "id": 997,
-            "spriteName": "item-holiday-star",
-            "name": "Holiday Spirit",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 149,
           "itemId": 998,
           "dropRate": 0.8,
           "count": 1,
@@ -14535,6 +14522,19 @@
             "id": 998,
             "spriteName": "ring-wreath",
             "name": "Wreath Ring",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 149,
+          "itemId": 997,
+          "dropRate": 1,
+          "count": 1,
+          "item": {
+            "id": 997,
+            "spriteName": "item-holiday-star",
+            "name": "Holiday Spirit",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -14609,6 +14609,19 @@
         },
         {
           "mobId": 150,
+          "itemId": 993,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 993,
+            "spriteName": "crafting-candy-cane",
+            "name": "Candy Cane",
+            "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 150,
           "itemId": 996,
           "dropRate": 5,
           "count": 1,
@@ -14642,19 +14655,6 @@
             "id": 995,
             "spriteName": "item-ornament",
             "name": "Ornament",
-            "sellPrice": 750,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 150,
-          "itemId": 993,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 993,
-            "spriteName": "crafting-candy-cane",
-            "name": "Candy Cane",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -14755,19 +14755,6 @@
         },
         {
           "mobId": 151,
-          "itemId": 1016,
-          "dropRate": 2,
-          "count": 1,
-          "item": {
-            "id": 1016,
-            "spriteName": "item-present-red",
-            "name": "Red Present",
-            "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 151,
           "itemId": 1019,
           "dropRate": 1,
           "count": 1,
@@ -14786,6 +14773,19 @@
           "count": 1,
           "item": {
             "id": 1013,
+            "spriteName": "item-present-red",
+            "name": "Red Present",
+            "sellPrice": 1000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 151,
+          "itemId": 1016,
+          "dropRate": 2,
+          "count": 1,
+          "item": {
+            "id": 1016,
             "spriteName": "item-present-red",
             "name": "Red Present",
             "sellPrice": 1000,
@@ -14875,19 +14875,6 @@
         },
         {
           "mobId": 152,
-          "itemId": 994,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 994,
-            "spriteName": "item-red-stocking",
-            "name": "Stocking",
-            "sellPrice": 750,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 152,
           "itemId": 993,
           "dropRate": 5,
           "count": 1,
@@ -14901,13 +14888,13 @@
         },
         {
           "mobId": 152,
-          "itemId": 995,
+          "itemId": 994,
           "dropRate": 5,
           "count": 1,
           "item": {
-            "id": 995,
-            "spriteName": "item-ornament",
-            "name": "Ornament",
+            "id": 994,
+            "spriteName": "item-red-stocking",
+            "name": "Stocking",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -14921,6 +14908,19 @@
             "id": 996,
             "spriteName": "item-lump-coal",
             "name": "Lump of Coal",
+            "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 152,
+          "itemId": 995,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 995,
+            "spriteName": "item-ornament",
+            "name": "Ornament",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15008,13 +15008,13 @@
         },
         {
           "mobId": 153,
-          "itemId": 995,
+          "itemId": 996,
           "dropRate": 5,
           "count": 1,
           "item": {
-            "id": 995,
-            "spriteName": "item-ornament",
-            "name": "Ornament",
+            "id": 996,
+            "spriteName": "item-lump-coal",
+            "name": "Lump of Coal",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15034,13 +15034,13 @@
         },
         {
           "mobId": 153,
-          "itemId": 996,
+          "itemId": 995,
           "dropRate": 5,
           "count": 1,
           "item": {
-            "id": 996,
-            "spriteName": "item-lump-coal",
-            "name": "Lump of Coal",
+            "id": 995,
+            "spriteName": "item-ornament",
+            "name": "Ornament",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15128,13 +15128,13 @@
       "drops": [
         {
           "mobId": 154,
-          "itemId": 994,
+          "itemId": 993,
           "dropRate": 100,
           "count": 2,
           "item": {
-            "id": 994,
-            "spriteName": "item-red-stocking",
-            "name": "Stocking",
+            "id": 993,
+            "spriteName": "crafting-candy-cane",
+            "name": "Candy Cane",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15154,13 +15154,13 @@
         },
         {
           "mobId": 154,
-          "itemId": 993,
+          "itemId": 994,
           "dropRate": 100,
           "count": 2,
           "item": {
-            "id": 993,
-            "spriteName": "crafting-candy-cane",
-            "name": "Candy Cane",
+            "id": 994,
+            "spriteName": "item-red-stocking",
+            "name": "Stocking",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15175,6 +15175,19 @@
             "spriteName": "item-lump-coal",
             "name": "Lump of Coal",
             "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 154,
+          "itemId": 998,
+          "dropRate": 8,
+          "count": 1,
+          "item": {
+            "id": 998,
+            "spriteName": "ring-wreath",
+            "name": "Wreath Ring",
+            "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
         },
@@ -15200,19 +15213,6 @@
             "id": 999,
             "spriteName": "trinket-snowglobe",
             "name": "Snow Globe",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 154,
-          "itemId": 998,
-          "dropRate": 8,
-          "count": 1,
-          "item": {
-            "id": 998,
-            "spriteName": "ring-wreath",
-            "name": "Wreath Ring",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -15261,19 +15261,6 @@
       "drops": [
         {
           "mobId": 155,
-          "itemId": 1011,
-          "dropRate": 100,
-          "count": 5,
-          "item": {
-            "id": 1011,
-            "spriteName": "item-ice-shard",
-            "name": "Melted Crown",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 155,
           "itemId": 997,
           "dropRate": 100,
           "count": 10,
@@ -15281,6 +15268,19 @@
             "id": 997,
             "spriteName": "item-holiday-star",
             "name": "Holiday Spirit",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 155,
+          "itemId": 1011,
+          "dropRate": 100,
+          "count": 5,
+          "item": {
+            "id": 1011,
+            "spriteName": "item-ice-shard",
+            "name": "Melted Crown",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -15355,19 +15355,6 @@
         },
         {
           "mobId": 156,
-          "itemId": 1014,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 1014,
-            "spriteName": "item-present-white",
-            "name": "White Present",
-            "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 156,
           "itemId": 1017,
           "dropRate": 2,
           "count": 1,
@@ -15386,6 +15373,19 @@
           "count": 1,
           "item": {
             "id": 1020,
+            "spriteName": "item-present-white",
+            "name": "White Present",
+            "sellPrice": 1000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 156,
+          "itemId": 1014,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 1014,
             "spriteName": "item-present-white",
             "name": "White Present",
             "sellPrice": 1000,
@@ -15488,19 +15488,6 @@
         },
         {
           "mobId": 157,
-          "itemId": 1015,
-          "dropRate": 2,
-          "count": 1,
-          "item": {
-            "id": 1015,
-            "spriteName": "item-present-green",
-            "name": "Green Present",
-            "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 157,
           "itemId": 1018,
           "dropRate": 1,
           "count": 1,
@@ -15519,6 +15506,19 @@
           "count": 1,
           "item": {
             "id": 1012,
+            "spriteName": "item-present-green",
+            "name": "Green Present",
+            "sellPrice": 1000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 157,
+          "itemId": 1015,
+          "dropRate": 2,
+          "count": 1,
+          "item": {
+            "id": 1015,
             "spriteName": "item-present-green",
             "name": "Green Present",
             "sellPrice": 1000,
@@ -15608,6 +15608,19 @@
         },
         {
           "mobId": 158,
+          "itemId": 993,
+          "dropRate": 3,
+          "count": 1,
+          "item": {
+            "id": 993,
+            "spriteName": "crafting-candy-cane",
+            "name": "Candy Cane",
+            "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 158,
           "itemId": 994,
           "dropRate": 3,
           "count": 1,
@@ -15641,19 +15654,6 @@
             "id": 995,
             "spriteName": "item-ornament",
             "name": "Ornament",
-            "sellPrice": 750,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 158,
-          "itemId": 993,
-          "dropRate": 3,
-          "count": 1,
-          "item": {
-            "id": 993,
-            "spriteName": "crafting-candy-cane",
-            "name": "Candy Cane",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15754,13 +15754,13 @@
         },
         {
           "mobId": 159,
-          "itemId": 996,
+          "itemId": 994,
           "dropRate": 5,
           "count": 1,
           "item": {
-            "id": 996,
-            "spriteName": "item-lump-coal",
-            "name": "Lump of Coal",
+            "id": 994,
+            "spriteName": "item-red-stocking",
+            "name": "Stocking",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15780,13 +15780,13 @@
         },
         {
           "mobId": 159,
-          "itemId": 994,
+          "itemId": 996,
           "dropRate": 5,
           "count": 1,
           "item": {
-            "id": 994,
-            "spriteName": "item-red-stocking",
-            "name": "Stocking",
+            "id": 996,
+            "spriteName": "item-lump-coal",
+            "name": "Lump of Coal",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -15900,19 +15900,6 @@
         },
         {
           "mobId": 160,
-          "itemId": 995,
-          "dropRate": 50,
-          "count": 1,
-          "item": {
-            "id": 995,
-            "spriteName": "item-ornament",
-            "name": "Ornament",
-            "sellPrice": 750,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 160,
           "itemId": 996,
           "dropRate": 50,
           "count": 1,
@@ -15920,6 +15907,19 @@
             "id": 996,
             "spriteName": "item-lump-coal",
             "name": "Lump of Coal",
+            "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 160,
+          "itemId": 995,
+          "dropRate": 50,
+          "count": 1,
+          "item": {
+            "id": 995,
+            "spriteName": "item-ornament",
+            "name": "Ornament",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -16149,19 +16149,6 @@
         },
         {
           "mobId": 162,
-          "itemId": 1053,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 1053,
-            "spriteName": "crafting-gold-skull-chunk-1",
-            "name": "Gold Skull Left Eye Piece",
-            "sellPrice": 800,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 162,
           "itemId": 1055,
           "dropRate": 5,
           "count": 1,
@@ -16169,6 +16156,19 @@
             "id": 1055,
             "spriteName": "crafting-gold-skull-chunk-3",
             "name": "Gold Skull Nose Piece",
+            "sellPrice": 800,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 162,
+          "itemId": 1053,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 1053,
+            "spriteName": "crafting-gold-skull-chunk-1",
+            "name": "Gold Skull Left Eye Piece",
             "sellPrice": 800,
             "sellPriceUnit": "COINS"
           }
@@ -16275,19 +16275,6 @@
         },
         {
           "mobId": 163,
-          "itemId": 1052,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 1052,
-            "spriteName": "crafting-gold-skull-chunk-jaw",
-            "name": "Gold Skull Jaw Piece",
-            "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 163,
           "itemId": 1051,
           "dropRate": 35,
           "count": 1,
@@ -16295,6 +16282,19 @@
             "id": 1051,
             "spriteName": "crafting-gemstone-box",
             "name": "Gemstone Box",
+            "sellPrice": 1000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 163,
+          "itemId": 1052,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 1052,
+            "spriteName": "crafting-gold-skull-chunk-jaw",
+            "name": "Gold Skull Jaw Piece",
             "sellPrice": 1000,
             "sellPriceUnit": "COINS"
           }
@@ -16605,19 +16605,6 @@
         },
         {
           "mobId": 165,
-          "itemId": 1054,
-          "dropRate": 8,
-          "count": 1,
-          "item": {
-            "id": 1054,
-            "spriteName": "crafting-gold-skull-chunk-2",
-            "name": "Gold Skull Right Eye Piece",
-            "sellPrice": 800,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 165,
           "itemId": 1053,
           "dropRate": 8,
           "count": 1,
@@ -16625,6 +16612,19 @@
             "id": 1053,
             "spriteName": "crafting-gold-skull-chunk-1",
             "name": "Gold Skull Left Eye Piece",
+            "sellPrice": 800,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 165,
+          "itemId": 1054,
+          "dropRate": 8,
+          "count": 1,
+          "item": {
+            "id": 1054,
+            "spriteName": "crafting-gold-skull-chunk-2",
+            "name": "Gold Skull Right Eye Piece",
             "sellPrice": 800,
             "sellPriceUnit": "COINS"
           }
@@ -17792,13 +17792,13 @@
         },
         {
           "mobId": 178,
-          "itemId": 1151,
+          "itemId": 1154,
           "dropRate": 0.1,
           "count": 1,
           "item": {
-            "id": 1151,
-            "spriteName": "outfit-penguin-legs-black",
-            "name": "Penguin Legs",
+            "id": 1154,
+            "spriteName": "outfit-penguin-head-black",
+            "name": "Penguin Head",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -17818,13 +17818,13 @@
         },
         {
           "mobId": 178,
-          "itemId": 1154,
+          "itemId": 1151,
           "dropRate": 0.1,
           "count": 1,
           "item": {
-            "id": 1154,
-            "spriteName": "outfit-penguin-head-black",
-            "name": "Penguin Head",
+            "id": 1151,
+            "spriteName": "outfit-penguin-legs-black",
+            "name": "Penguin Legs",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -17899,13 +17899,13 @@
         },
         {
           "mobId": 179,
-          "itemId": 1160,
+          "itemId": 1161,
           "dropRate": 0.1,
           "count": 1,
           "item": {
-            "id": 1160,
-            "spriteName": "outfit-inuk-legs",
-            "name": "Inuk Legs",
+            "id": 1161,
+            "spriteName": "outfit-inuk-body",
+            "name": "Inuk Body",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -17925,13 +17925,13 @@
         },
         {
           "mobId": 179,
-          "itemId": 1161,
+          "itemId": 1160,
           "dropRate": 0.1,
           "count": 1,
           "item": {
-            "id": 1161,
-            "spriteName": "outfit-inuk-body",
-            "name": "Inuk Body",
+            "id": 1160,
+            "spriteName": "outfit-inuk-legs",
+            "name": "Inuk Legs",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -17980,6 +17980,19 @@
       "drops": [
         {
           "mobId": 180,
+          "itemId": 1131,
+          "dropRate": 50,
+          "count": 1,
+          "item": {
+            "id": 1131,
+            "spriteName": "crafting-cog-small",
+            "name": "Cog",
+            "sellPrice": 925,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 180,
           "itemId": 1129,
           "dropRate": 50,
           "count": 1,
@@ -17988,19 +18001,6 @@
             "spriteName": "item-bag-ice",
             "name": "Bag of Ice",
             "sellPrice": 1000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 180,
-          "itemId": 1131,
-          "dropRate": 50,
-          "count": 1,
-          "item": {
-            "id": 1131,
-            "spriteName": "crafting-cog-small",
-            "name": "Cog",
-            "sellPrice": 1250,
             "sellPriceUnit": "COINS"
           }
         },
@@ -18407,7 +18407,7 @@
             "id": 1131,
             "spriteName": "crafting-cog-small",
             "name": "Cog",
-            "sellPrice": 1250,
+            "sellPrice": 925,
             "sellPriceUnit": "COINS"
           }
         },
@@ -18743,7 +18743,7 @@
       "name": "Sea Turtle",
       "desc": null,
       "level": 61,
-      "health": 10000,
+      "health": 9000,
       "goldMin": 300,
       "goldMax": 1350,
       "atkSpeed": 2200,
@@ -18754,8 +18754,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T19:27:29.196Z",
-      "updatedAt": "$D2025-02-10T21:08:06.676Z",
-      "definitionUpdatedAt": "$D2025-02-10T20:19:43.915Z",
+      "updatedAt": "$D2025-02-12T06:47:09.520Z",
+      "definitionUpdatedAt": "$D2025-02-12T06:47:09.518Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -18944,7 +18944,7 @@
       "name": "Hermit Crab",
       "desc": null,
       "level": 63,
-      "health": 10000,
+      "health": 9500,
       "goldMin": 450,
       "goldMax": 1575,
       "atkSpeed": 3000,
@@ -18955,8 +18955,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:21.389Z",
-      "updatedAt": "$D2025-02-10T21:16:36.106Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:21.389Z",
+      "updatedAt": "$D2025-02-12T06:48:13.526Z",
+      "definitionUpdatedAt": "$D2025-02-12T06:48:13.524Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19042,26 +19042,13 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:22.047Z",
-      "updatedAt": "$D2025-02-10T22:43:28.192Z",
-      "definitionUpdatedAt": "$D2025-02-10T22:43:28.190Z",
+      "updatedAt": "$D2025-02-12T06:48:30.921Z",
+      "definitionUpdatedAt": "$D2025-02-12T06:48:30.920Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
       "spawnTimeSec": null,
       "drops": [
-        {
-          "mobId": 191,
-          "itemId": 1252,
-          "dropRate": 75,
-          "count": 3,
-          "item": {
-            "id": 1252,
-            "spriteName": "item-pufferfish-thorn",
-            "name": "Pufferfish Spine",
-            "sellPrice": 750,
-            "sellPriceUnit": "COINS"
-          }
-        },
         {
           "mobId": 191,
           "itemId": 1248,
@@ -19071,6 +19058,19 @@
             "id": 1248,
             "spriteName": "item-kelp",
             "name": "Kelp",
+            "sellPrice": 750,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 191,
+          "itemId": 1252,
+          "dropRate": 75,
+          "count": 3,
+          "item": {
+            "id": 1252,
+            "spriteName": "item-pufferfish-thorn",
+            "name": "Pufferfish Spine",
             "sellPrice": 750,
             "sellPriceUnit": "COINS"
           }
@@ -19112,7 +19112,7 @@
       "name": "Scuba Skele",
       "desc": null,
       "level": 64,
-      "health": 14000,
+      "health": 12000,
       "goldMin": 625,
       "goldMax": 1725,
       "atkSpeed": 2200,
@@ -19123,8 +19123,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:22.707Z",
-      "updatedAt": "$D2025-02-10T21:10:49.474Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:22.707Z",
+      "updatedAt": "$D2025-02-12T06:58:17.193Z",
+      "definitionUpdatedAt": "$D2025-02-12T06:58:17.191Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19185,7 +19185,7 @@
         {
           "mobId": 192,
           "itemId": 1288,
-          "dropRate": 1,
+          "dropRate": 2,
           "count": 1,
           "item": {
             "id": 1288,
@@ -19219,7 +19219,7 @@
       "name": "Troglodyte",
       "desc": null,
       "level": 65,
-      "health": 16000,
+      "health": 14000,
       "goldMin": 595,
       "goldMax": 1850,
       "atkSpeed": 2200,
@@ -19230,8 +19230,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:23.751Z",
-      "updatedAt": "$D2025-02-10T21:15:21.778Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:23.751Z",
+      "updatedAt": "$D2025-02-12T06:59:13.508Z",
+      "definitionUpdatedAt": "$D2025-02-12T06:59:13.506Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19265,19 +19265,6 @@
         },
         {
           "mobId": 193,
-          "itemId": 1288,
-          "dropRate": 2,
-          "count": 1,
-          "item": {
-            "id": 1288,
-            "spriteName": "item-ocean-key",
-            "name": "Ocean Key",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 193,
           "itemId": 1269,
           "dropRate": 5,
           "count": 1,
@@ -19285,6 +19272,19 @@
             "id": 1269,
             "spriteName": "item-golden-dubloon",
             "name": "Golden Doubloon",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 193,
+          "itemId": 1288,
+          "dropRate": 2,
+          "count": 1,
+          "item": {
+            "id": 1288,
+            "spriteName": "item-ocean-key",
+            "name": "Ocean Key",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -19313,7 +19313,7 @@
       "name": "Buccaneer Skele",
       "desc": null,
       "level": 66,
-      "health": 15500,
+      "health": 13500,
       "goldMin": 575,
       "goldMax": 1800,
       "atkSpeed": 3200,
@@ -19324,8 +19324,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:24.599Z",
-      "updatedAt": "$D2025-02-10T21:22:02.052Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:24.599Z",
+      "updatedAt": "$D2025-02-12T07:10:56.082Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:10:56.079Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19359,19 +19359,6 @@
         },
         {
           "mobId": 194,
-          "itemId": 1257,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 1257,
-            "spriteName": "item-ship-deed",
-            "name": "Ship Deed",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 194,
           "itemId": 1267,
           "dropRate": 1,
           "count": 1,
@@ -19392,6 +19379,19 @@
             "id": 1288,
             "spriteName": "item-ocean-key",
             "name": "Ocean Key",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 194,
+          "itemId": 1257,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 1257,
+            "spriteName": "item-ship-deed",
+            "name": "Ship Deed",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -19420,7 +19420,7 @@
       "name": "Troglodyte Spearman",
       "desc": null,
       "level": 66,
-      "health": 16800,
+      "health": 15000,
       "goldMin": 530,
       "goldMax": 1760,
       "atkSpeed": 3200,
@@ -19431,8 +19431,8 @@
       "factionId": 10,
       "factionXp": 15,
       "createdAt": "$D2025-02-09T20:06:25.722Z",
-      "updatedAt": "$D2025-02-10T21:15:54.646Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:25.722Z",
+      "updatedAt": "$D2025-02-12T07:11:50.928Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:11:50.926Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19453,19 +19453,6 @@
         },
         {
           "mobId": 195,
-          "itemId": 1269,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 1269,
-            "spriteName": "item-golden-dubloon",
-            "name": "Golden Doubloon",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 195,
           "itemId": 1284,
           "dropRate": 10,
           "count": 1,
@@ -19479,8 +19466,21 @@
         },
         {
           "mobId": 195,
+          "itemId": 1269,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 1269,
+            "spriteName": "item-golden-dubloon",
+            "name": "Golden Doubloon",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 195,
           "itemId": 1288,
-          "dropRate": 1,
+          "dropRate": 2,
           "count": 1,
           "item": {
             "id": 1288,
@@ -19514,7 +19514,7 @@
       "name": "Enraged Octopus",
       "desc": null,
       "level": 66,
-      "health": 15000,
+      "health": 14000,
       "goldMin": 600,
       "goldMax": 1785,
       "atkSpeed": 2200,
@@ -19525,8 +19525,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:26.595Z",
-      "updatedAt": "$D2025-02-10T21:19:05.958Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:26.595Z",
+      "updatedAt": "$D2025-02-12T07:12:23.398Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:12:23.396Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19560,11 +19560,11 @@
         },
         {
           "mobId": 196,
-          "itemId": 1262,
-          "dropRate": 2,
+          "itemId": 1263,
+          "dropRate": 3,
           "count": 1,
           "item": {
-            "id": 1262,
+            "id": 1263,
             "spriteName": "consumable-gem-bag",
             "name": "Lost Pirate Pouch",
             "sellPrice": 5000,
@@ -19573,11 +19573,11 @@
         },
         {
           "mobId": 196,
-          "itemId": 1263,
-          "dropRate": 3,
+          "itemId": 1262,
+          "dropRate": 2,
           "count": 1,
           "item": {
-            "id": 1263,
+            "id": 1262,
             "spriteName": "consumable-gem-bag",
             "name": "Lost Pirate Pouch",
             "sellPrice": 5000,
@@ -19634,7 +19634,7 @@
       "name": "Pearlkeeper Clam",
       "desc": null,
       "level": 66,
-      "health": 15500,
+      "health": 14000,
       "goldMin": 525,
       "goldMax": 1800,
       "atkSpeed": 2400,
@@ -19645,8 +19645,8 @@
       "factionId": 10,
       "factionXp": 10,
       "createdAt": "$D2025-02-09T20:06:27.975Z",
-      "updatedAt": "$D2025-02-10T21:11:29.500Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:27.975Z",
+      "updatedAt": "$D2025-02-12T07:13:08.485Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:13:08.483Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19693,19 +19693,6 @@
         },
         {
           "mobId": 197,
-          "itemId": 1297,
-          "dropRate": 5,
-          "count": 1,
-          "item": {
-            "id": 1297,
-            "spriteName": "crafting-pearl-black",
-            "name": "Black Pearl",
-            "sellPrice": 8000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 197,
           "itemId": 1286,
           "dropRate": 6,
           "count": 1,
@@ -19713,6 +19700,19 @@
             "id": 1286,
             "spriteName": "shield-clam-purple",
             "name": "Pearlkeeper Shield",
+            "sellPrice": 8000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 197,
+          "itemId": 1297,
+          "dropRate": 5,
+          "count": 1,
+          "item": {
+            "id": 1297,
+            "spriteName": "crafting-pearl-black",
+            "name": "Black Pearl",
             "sellPrice": 8000,
             "sellPriceUnit": "COINS"
           }
@@ -19741,7 +19741,7 @@
       "name": "Troglodyte Barbarian",
       "desc": null,
       "level": 67,
-      "health": 17000,
+      "health": 16000,
       "goldMin": 655,
       "goldMax": 1975,
       "atkSpeed": 2700,
@@ -19752,8 +19752,8 @@
       "factionId": 10,
       "factionXp": 15,
       "createdAt": "$D2025-02-09T20:06:29.054Z",
-      "updatedAt": "$D2025-02-10T21:22:48.538Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:29.054Z",
+      "updatedAt": "$D2025-02-12T07:15:58.253Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:15:58.251Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19813,6 +19813,19 @@
         },
         {
           "mobId": 198,
+          "itemId": 1288,
+          "dropRate": 2,
+          "count": 1,
+          "item": {
+            "id": 1288,
+            "spriteName": "item-ocean-key",
+            "name": "Ocean Key",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 198,
           "itemId": 1269,
           "dropRate": 5,
           "count": 1,
@@ -19820,19 +19833,6 @@
             "id": 1269,
             "spriteName": "item-golden-dubloon",
             "name": "Golden Doubloon",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 198,
-          "itemId": 1288,
-          "dropRate": 1,
-          "count": 1,
-          "item": {
-            "id": 1288,
-            "spriteName": "item-ocean-key",
-            "name": "Ocean Key",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -19861,7 +19861,7 @@
       "name": "Pirate Skele",
       "desc": null,
       "level": 67,
-      "health": 17000,
+      "health": 16000,
       "goldMin": 600,
       "goldMax": 1900,
       "atkSpeed": 2900,
@@ -19872,8 +19872,8 @@
       "factionId": 10,
       "factionXp": 15,
       "createdAt": "$D2025-02-09T20:06:30.369Z",
-      "updatedAt": "$D2025-02-10T21:09:24.698Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:30.369Z",
+      "updatedAt": "$D2025-02-12T07:16:23.297Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:16:23.296Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -19994,7 +19994,7 @@
       "name": "Crab Sub",
       "desc": null,
       "level": 69,
-      "health": 18000,
+      "health": 17000,
       "goldMin": 700,
       "goldMax": 2100,
       "atkSpeed": 2200,
@@ -20005,8 +20005,8 @@
       "factionId": 10,
       "factionXp": 15,
       "createdAt": "$D2025-02-09T20:06:31.815Z",
-      "updatedAt": "$D2025-02-10T21:17:42.235Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:31.815Z",
+      "updatedAt": "$D2025-02-12T07:16:53.634Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:16:53.632Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20021,7 +20021,7 @@
             "id": 1131,
             "spriteName": "crafting-cog-small",
             "name": "Cog",
-            "sellPrice": 1250,
+            "sellPrice": 925,
             "sellPriceUnit": "COINS"
           }
         },
@@ -20120,7 +20120,7 @@
       "name": "Troglodyte Mage",
       "desc": null,
       "level": 69,
-      "health": 20000,
+      "health": 18000,
       "goldMin": 775,
       "goldMax": 2150,
       "atkSpeed": 2200,
@@ -20131,8 +20131,8 @@
       "factionId": 10,
       "factionXp": 20,
       "createdAt": "$D2025-02-09T20:06:33.175Z",
-      "updatedAt": "$D2025-02-10T21:14:43.785Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:33.175Z",
+      "updatedAt": "$D2025-02-12T07:17:32.366Z",
+      "definitionUpdatedAt": "$D2025-02-12T07:17:32.364Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20192,6 +20192,19 @@
         },
         {
           "mobId": 201,
+          "itemId": 1288,
+          "dropRate": 3,
+          "count": 1,
+          "item": {
+            "id": 1288,
+            "spriteName": "item-ocean-key",
+            "name": "Ocean Key",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 201,
           "itemId": 1280,
           "dropRate": 2,
           "count": 1,
@@ -20199,19 +20212,6 @@
             "id": 1280,
             "spriteName": "ring-ocean",
             "name": "Ring of the Ocean",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 201,
-          "itemId": 1288,
-          "dropRate": 1,
-          "count": 1,
-          "item": {
-            "id": 1288,
-            "spriteName": "item-ocean-key",
-            "name": "Ocean Key",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -20273,19 +20273,6 @@
         },
         {
           "mobId": 202,
-          "itemId": 1257,
-          "dropRate": 100,
-          "count": 4,
-          "item": {
-            "id": 1257,
-            "spriteName": "item-ship-deed",
-            "name": "Ship Deed",
-            "sellPrice": 10000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 202,
           "itemId": 1269,
           "dropRate": 100,
           "count": 4,
@@ -20293,6 +20280,19 @@
             "id": 1269,
             "spriteName": "item-golden-dubloon",
             "name": "Golden Doubloon",
+            "sellPrice": 10000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 202,
+          "itemId": 1257,
+          "dropRate": 100,
+          "count": 4,
+          "item": {
+            "id": 1257,
+            "spriteName": "item-ship-deed",
+            "name": "Ship Deed",
             "sellPrice": 10000,
             "sellPriceUnit": "COINS"
           }
@@ -20406,19 +20406,6 @@
         },
         {
           "mobId": 203,
-          "itemId": 1307,
-          "dropRate": 100,
-          "count": 1,
-          "item": {
-            "id": 1307,
-            "spriteName": "item-kraken-eye-blue",
-            "name": "Blue Kraken Eye",
-            "sellPrice": 25000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 203,
           "itemId": 1258,
           "dropRate": 100,
           "count": 1,
@@ -20426,6 +20413,19 @@
             "id": 1258,
             "spriteName": "item-kraken-eye",
             "name": "Red Kraken Eye",
+            "sellPrice": 25000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 203,
+          "itemId": 1307,
+          "dropRate": 100,
+          "count": 1,
+          "item": {
+            "id": 1307,
+            "spriteName": "item-kraken-eye-blue",
+            "name": "Blue Kraken Eye",
             "sellPrice": 25000,
             "sellPriceUnit": "COINS"
           }
@@ -20581,19 +20581,6 @@
         },
         {
           "mobId": 205,
-          "itemId": 1297,
-          "dropRate": 100,
-          "count": 3,
-          "item": {
-            "id": 1297,
-            "spriteName": "crafting-pearl-black",
-            "name": "Black Pearl",
-            "sellPrice": 8000,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 205,
           "itemId": 1250,
           "dropRate": 100,
           "count": 2,
@@ -20601,6 +20588,19 @@
             "id": 1250,
             "spriteName": "item-anchor",
             "name": "Anchor",
+            "sellPrice": 8000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 205,
+          "itemId": 1297,
+          "dropRate": 100,
+          "count": 3,
+          "item": {
+            "id": 1297,
+            "spriteName": "crafting-pearl-black",
+            "name": "Black Pearl",
             "sellPrice": 8000,
             "sellPriceUnit": "COINS"
           }
@@ -20678,9 +20678,9 @@
       "spriteName": "enemy-coral-vein",
       "factionId": 4,
       "factionXp": 20,
-      "createdAt": "$D2025-02-09T20:06:38.701Z",
-      "updatedAt": "$D2025-02-09T20:06:38.701Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:38.701Z",
+      "createdAt": "$D2025-02-09T20: 06: 38.701Z",
+      "updatedAt": "$D2025-02-09T20: 06: 38.701Z",
+      "definitionUpdatedAt": "$D2025-02-09T20: 06: 38.701Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20718,9 +20718,9 @@
         "spriteName": "consumable-faction-badge-mc",
         "name": "Miner Collective",
         "note": null,
-        "definitionUpdatedAt": "$D2025-02-09T20:06:18.234Z",
-        "createdAt": "$D2024-09-28T11:54:06.091Z",
-        "updatedAt": "$D2025-02-09T20:06:18.235Z"
+        "definitionUpdatedAt": "$D2025-02-09T20: 06: 18.234Z",
+        "createdAt": "$D2024-09-28T11: 54: 06.091Z",
+        "updatedAt": "$D2025-02-09T20: 06: 18.235Z"
       },
       "locations": []
     },
@@ -20739,9 +20739,9 @@
       "spriteName": "enemy-salt-vein",
       "factionId": 4,
       "factionXp": 20,
-      "createdAt": "$D2025-02-09T20:06:39.200Z",
-      "updatedAt": "$D2025-02-09T20:06:39.200Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:39.200Z",
+      "createdAt": "$D2025-02-09T20: 06: 39.200Z",
+      "updatedAt": "$D2025-02-09T20: 06: 39.200Z",
+      "definitionUpdatedAt": "$D2025-02-09T20: 06: 39.200Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20779,9 +20779,9 @@
         "spriteName": "consumable-faction-badge-mc",
         "name": "Miner Collective",
         "note": null,
-        "definitionUpdatedAt": "$D2025-02-09T20:06:18.234Z",
-        "createdAt": "$D2024-09-28T11:54:06.091Z",
-        "updatedAt": "$D2025-02-09T20:06:18.235Z"
+        "definitionUpdatedAt": "$D2025-02-09T20: 06: 18.234Z",
+        "createdAt": "$D2024-09-28T11: 54: 06.091Z",
+        "updatedAt": "$D2025-02-09T20: 06: 18.235Z"
       },
       "locations": []
     },
@@ -20800,9 +20800,9 @@
       "spriteName": "enemy-sunken-chest",
       "factionId": 1,
       "factionXp": 0,
-      "createdAt": "$D2025-02-09T20:06:39.676Z",
-      "updatedAt": "$D2025-02-09T20:06:39.676Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:39.676Z",
+      "createdAt": "$D2025-02-09T20: 06: 39.676Z",
+      "updatedAt": "$D2025-02-09T20: 06: 39.676Z",
+      "definitionUpdatedAt": "$D2025-02-09T20: 06: 39.676Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20853,9 +20853,9 @@
         "spriteName": "consumable-faction-badge-nwo",
         "name": "New World Order",
         "note": null,
-        "definitionUpdatedAt": "$D2025-02-09T20:06:17.573Z",
-        "createdAt": "$D2024-09-28T11:54:06.521Z",
-        "updatedAt": "$D2025-02-09T20:06:17.574Z"
+        "definitionUpdatedAt": "$D2025-02-09T20: 06: 17.573Z",
+        "createdAt": "$D2024-09-28T11: 54: 06.521Z",
+        "updatedAt": "$D2025-02-09T20: 06: 17.574Z"
       },
       "locations": []
     },
@@ -20864,7 +20864,7 @@
       "name": "Jellyfish",
       "desc": null,
       "level": 68,
-      "health": 12200,
+      "health": 12000,
       "goldMin": 400,
       "goldMax": 1685,
       "atkSpeed": 2900,
@@ -20874,9 +20874,9 @@
       "spriteName": "enemy-jellyfish",
       "factionId": 10,
       "factionXp": 10,
-      "createdAt": "$D2025-02-09T20:06:40.347Z",
-      "updatedAt": "$D2025-02-10T22:50:55.749Z",
-      "definitionUpdatedAt": "$D2025-02-10T22:50:55.747Z",
+      "createdAt": "$D2025-02-09T20: 06: 40.347Z",
+      "updatedAt": "$D2025-02-12T07: 20: 00.765Z",
+      "definitionUpdatedAt": "$D2025-02-12T07: 20: 00.764Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20927,9 +20927,9 @@
         "spriteName": "consumable-faction-badge-eotd",
         "name": "Echoes of the Deep",
         "note": null,
-        "definitionUpdatedAt": "$D2025-02-09T20:06:19.370Z",
-        "createdAt": "$D2025-02-09T19:27:28.241Z",
-        "updatedAt": "$D2025-02-09T20:06:19.371Z"
+        "definitionUpdatedAt": "$D2025-02-09T20: 06: 19.370Z",
+        "createdAt": "$D2025-02-09T19: 27: 28.241Z",
+        "updatedAt": "$D2025-02-09T20: 06: 19.371Z"
       },
       "locations": [
         {
@@ -20945,7 +20945,7 @@
       "name": "Spike Crab",
       "desc": null,
       "level": 65,
-      "health": 13800,
+      "health": 12500,
       "goldMin": 485,
       "goldMax": 1775,
       "atkSpeed": 2800,
@@ -20955,9 +20955,9 @@
       "spriteName": "enemy-crab-spike",
       "factionId": 10,
       "factionXp": 10,
-      "createdAt": "$D2025-02-09T20:06:41.009Z",
-      "updatedAt": "$D2025-02-10T21:18:14.657Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:41.009Z",
+      "createdAt": "$D2025-02-09T20: 06: 41.009Z",
+      "updatedAt": "$D2025-02-12T07: 22: 38.934Z",
+      "definitionUpdatedAt": "$D2025-02-12T07: 22: 38.932Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -20973,19 +20973,6 @@
             "spriteName": "consumable-spike-crab-claw",
             "name": "Spiked Crab Claw",
             "sellPrice": 850,
-            "sellPriceUnit": "COINS"
-          }
-        },
-        {
-          "mobId": 210,
-          "itemId": 1263,
-          "dropRate": 1,
-          "count": 1,
-          "item": {
-            "id": 1263,
-            "spriteName": "consumable-gem-bag",
-            "name": "Lost Pirate Pouch",
-            "sellPrice": 5000,
             "sellPriceUnit": "COINS"
           }
         },
@@ -21009,6 +20996,19 @@
           "count": 1,
           "item": {
             "id": 1262,
+            "spriteName": "consumable-gem-bag",
+            "name": "Lost Pirate Pouch",
+            "sellPrice": 5000,
+            "sellPriceUnit": "COINS"
+          }
+        },
+        {
+          "mobId": 210,
+          "itemId": 1263,
+          "dropRate": 1,
+          "count": 1,
+          "item": {
+            "id": 1263,
             "spriteName": "consumable-gem-bag",
             "name": "Lost Pirate Pouch",
             "sellPrice": 5000,
@@ -21047,9 +21047,9 @@
         "spriteName": "consumable-faction-badge-eotd",
         "name": "Echoes of the Deep",
         "note": null,
-        "definitionUpdatedAt": "$D2025-02-09T20:06:19.370Z",
-        "createdAt": "$D2025-02-09T19:27:28.241Z",
-        "updatedAt": "$D2025-02-09T20:06:19.371Z"
+        "definitionUpdatedAt": "$D2025-02-09T20: 06: 19.370Z",
+        "createdAt": "$D2025-02-09T19: 27: 28.241Z",
+        "updatedAt": "$D2025-02-09T20: 06: 19.371Z"
       },
       "locations": [
         {
@@ -21075,9 +21075,9 @@
       "spriteName": "enemy-cat-black",
       "factionId": 1,
       "factionXp": 100,
-      "createdAt": "$D2025-02-09T20:06:42.244Z",
-      "updatedAt": "$D2025-02-10T21:04:04.671Z",
-      "definitionUpdatedAt": "$D2025-02-09T20:06:42.244Z",
+      "createdAt": "$D2025-02-09T20: 06: 42.244Z",
+      "updatedAt": "$D2025-02-10T21: 04: 04.671Z",
+      "definitionUpdatedAt": "$D2025-02-09T20: 06: 42.244Z",
       "note": null,
       "artist": null,
       "numSpawns": null,
@@ -21128,9 +21128,9 @@
         "spriteName": "consumable-faction-badge-nwo",
         "name": "New World Order",
         "note": null,
-        "definitionUpdatedAt": "$D2025-02-09T20:06:17.573Z",
-        "createdAt": "$D2024-09-28T11:54:06.521Z",
-        "updatedAt": "$D2025-02-09T20:06:17.574Z"
+        "definitionUpdatedAt": "$D2025-02-09T20: 06: 17.573Z",
+        "createdAt": "$D2024-09-28T11: 54: 06.521Z",
+        "updatedAt": "$D2025-02-09T20: 06: 17.574Z"
       },
       "locations": [
         {
