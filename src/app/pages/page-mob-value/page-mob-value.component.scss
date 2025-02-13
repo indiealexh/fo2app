@@ -3,4 +3,16 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+
+  .shelved {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

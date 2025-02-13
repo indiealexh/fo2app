@@ -1,9 +1,9 @@
-<div>
-  <div>
-  <label for="dps-tb">Player DPS</label>
-  <input id="dps-tb" type="number" [ngModel]="dps()" (ngModelChange)="dps.set($event)">
+<div class="shelved">
+  <div class="stacked">
+    <label for="dps-tb">Player DPS</label>
+    <input id="dps-tb" type="number" [ngModel]="dps()" (ngModelChange)="dps.set($event)">
   </div>
-  <div>
+  <div class="stacked">
     <label for="lvl-tb">Player Level</label>
     <input id="lvl-tb" type="number" [ngModel]="lvl()" (ngModelChange)="lvl.set($event)">
   </div>
