@@ -4,6 +4,7 @@ import {
   ColDef,
   GetRowIdFunc,
   GetRowIdParams,
+  GridOptions,
   ModuleRegistry,
   SizeColumnsToContentStrategy,
   themeQuartz
@@ -12,6 +13,9 @@ import { MobDataService } from '../../services/mob-data.service';
 import { AgGridAngular } from 'ag-grid-angular';
 import { Drop } from '../../models/mobs';
 import { FormsModule } from '@angular/forms';
+import {
+  AnimatedImageAgGridCellRendererComponent
+} from '../../ag-grid/animated-image-ag-grid-cell-renderer/animated-image-ag-grid-cell-renderer.component';
 
 
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -54,6 +58,7 @@ export class PageMobValueComponent {
           const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0;
           return ({
             id: m.id,
+            image: `https://art.fantasyonline2.com/textures/enemies/${m.spriteName}.png`,
             name: m.name,
             region: region,
             level: m.level,
@@ -110,7 +115,6 @@ export class PageMobValueComponent {
     }
     // This only works accurately when the players level is less than the mobs, but close enough for now
     const xpAdjustPercent = Math.min(Math.max(0.05 * lvlDiff, -1), 1);
-    console.debug(`xpAdjustPercent: ${xpAdjustPercent}`);
     const baseXp = this.calcBaseXP(mobLevel);
     return Math.round(baseXp + (baseXp * xpAdjustPercent));
   }
@@ -120,6 +124,7 @@ export class PageMobValueComponent {
 
   // Column Definitions: Defines the columns to be displayed.
   colDefs: ColDef[] = [
+    {field: "image", width: 32, cellRenderer: AnimatedImageAgGridCellRendererComponent},
     {field: "name"},
     {field: "region", filter: true},
     {field: "level", filter: true},
@@ -139,12 +144,16 @@ export class PageMobValueComponent {
 
   getRowId: GetRowIdFunc = (params: GetRowIdParams) =>
     String(params.data.id);
+  gridOptions = signal<GridOptions<any> | undefined>({
+    rowHeight: 64,
+  });
 
 
 }
 
 export interface MobRow {
   id: number;
+  image: string;
   name: string;
   region: string;
   level: number;
