@@ -47,8 +47,11 @@ export class PageMobValueComponent {
           const dropValue = m.drops ? this.itemValueChangeToGold(m.drops) : 0;
           const overallAvgValue = dropValue + goldAvg;
           const valuePerHp = overallAvgValue / (m.health ?? 0);
+          const region = m.locations?.at(0)?.area?.name ?? "Unknown";
           return ({
             name: m.name,
+            region: region,
+            level: m.level,
             goldMin: m.goldMin,
             goldMax: m.goldMax,
             goldAvg: goldAvg,
@@ -58,6 +61,7 @@ export class PageMobValueComponent {
             overallAvgValue: this.roundNum(overallAvgValue),
             valuePerHp: this.roundNum(valuePerHp),
             valuePerSecond: this.roundNum(valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1))),
+            xptohpratio: this.roundNum((m.level ?? 0) / (m.health ?? 0)),
           })
         }) as MobRow[]);
       }
@@ -94,6 +98,8 @@ export class PageMobValueComponent {
   // Column Definitions: Defines the columns to be displayed.
   colDefs: ColDef[] = [
     {field: "name"},
+    {field: "region", filter: true},
+    {field: "level", filter: true},
     {field: "goldMin"},
     {field: "goldMax"},
     {field: "goldAvg"},
@@ -103,6 +109,7 @@ export class PageMobValueComponent {
     {field: "overallAvgValue", filter: true},
     {field: "valuePerHp", filter: true},
     {field: "valuePerSecond", filter: true},
+    {field: "xptohpratio", filter: true},
   ];
 
 
@@ -110,6 +117,8 @@ export class PageMobValueComponent {
 
 export interface MobRow {
   name: string;
+  region: string;
+  level: number;
   goldMin: number;
   goldMax: number;
   goldAvg: number;
@@ -119,4 +128,5 @@ export interface MobRow {
   overallAvgValue: number;
   valuePerHp: number;
   valuePerSecond: number;
+  xptohpratio: number;
 }
