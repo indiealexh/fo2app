@@ -29,6 +29,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 })
 export class PageMobValueComponent {
 
+  lvl = signal<number>(30);
   dps = signal(200);
 
   mobData = inject(MobDataService);
@@ -48,6 +49,7 @@ export class PageMobValueComponent {
           const overallAvgValue = dropValue + goldAvg;
           const valuePerHp = overallAvgValue / (m.health ?? 0);
           const region = m.locations?.at(0)?.area?.name ?? "Unknown";
+          const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0
           return ({
             name: m.name,
             region: region,
@@ -62,6 +64,8 @@ export class PageMobValueComponent {
             valuePerHp: this.roundNum(valuePerHp),
             valuePerSecond: this.roundNum(valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1))),
             xptohpratio: this.roundNum((m.level ?? 0) / (m.health ?? 0)),
+            baseXp: baseXP,
+            estXP: this.roundNum(this.calcXPDrop(m.level ?? 0, this.lvl())),
           })
         }) as MobRow[]);
       }
@@ -92,6 +96,19 @@ export class PageMobValueComponent {
     return gold;
   }
 
+  calcBaseXP(mobLevel: number) {
+    return (5 * (mobLevel - 1)) + 50;
+  }
+
+  calcXPDrop(mobLevel: number, playerLevel: number) {
+    const lvlDiff = mobLevel - playerLevel;
+    // This only works accurately when the players level is less than the mobs, but close enough for now
+    const xpAdjustPercent = Math.min(Math.max(0.05 * lvlDiff,-1),1);
+    console.debug(`xpAdjustPercent: ${xpAdjustPercent}`);
+    const baseXp = this.calcBaseXP(mobLevel);
+    return Math.round(baseXp + (baseXp * xpAdjustPercent));
+  }
+
 
   rowData = signal<MobRow[]>([])
 
@@ -100,6 +117,8 @@ export class PageMobValueComponent {
     {field: "name"},
     {field: "region", filter: true},
     {field: "level", filter: true},
+    {field: "baseXp", filter: true},
+    {field: "estXP", filter: true},
     {field: "goldMin"},
     {field: "goldMax"},
     {field: "goldAvg"},
@@ -129,4 +148,6 @@ export interface MobRow {
   valuePerHp: number;
   valuePerSecond: number;
   xptohpratio: number;
+  baseXp: number;
+  estXP: number;
 }
