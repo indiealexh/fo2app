@@ -71,9 +71,12 @@ export class PageMobValueComponent {
             overallAvgValue: overallAvgValue,
             valuePerHp: valuePerHp,
             valuePerSecond: valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1)),
-            xptohpratio: this.calcXPDrop(m.level ?? 0, this.lvl()) / (m.health ?? 0),
+            xpToHpRatio: this.calcXPDrop(m.level ?? 0, this.lvl()) / (m.health ?? 0),
             baseXp: baseXP,
             estXP: this.calcXPDrop(m.level ?? 0, this.lvl()),
+            faction: m.faction?.name ?? "Unknown",
+            factionXp: m.factionXp ?? 0,
+            factionXpToHpRatio: (m.factionXp ?? 0) / (m.health ?? 0),
           })
         }) as MobRow[]);
       }
@@ -131,7 +134,7 @@ export class PageMobValueComponent {
     {field: "baseXp", filter: true},
     {field: "estXP", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
     {field: "hp", filter: true},
-    {field: "xptohpratio", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
+    {field: "xpToHpRatio", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
     {field: "goldMin"},
     {field: "goldMax"},
     {field: "goldAvg", valueFormatter: (params) => this.roundNum(params.value).toString()},
@@ -140,6 +143,9 @@ export class PageMobValueComponent {
     {field: "overallAvgValue", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
     {field: "valuePerHp", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
     {field: "valuePerSecond", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
+    {field: "faction", filter: true},
+    {field: "factionXp", filter: true},
+    {field: "factionXpToHpRatio", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
   ];
 
   getRowId: GetRowIdFunc = (params: GetRowIdParams) =>
@@ -166,7 +172,10 @@ export interface MobRow {
   overallAvgValue: number;
   valuePerHp: number;
   valuePerSecond: number;
-  xptohpratio: number;
+  xpToHpRatio: number;
   baseXp: number;
   estXP: number;
+  faction: string;
+  factionXp: number;
+  factionXpToHpRatio: number;
 }
