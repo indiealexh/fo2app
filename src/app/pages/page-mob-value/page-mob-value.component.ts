@@ -126,7 +126,7 @@ export class PageMobValueComponent {
   colDefs: ColDef[] = [
     {field: "image", width: 32, cellRenderer: AnimatedImageAgGridCellRendererComponent},
     {field: "name"},
-    {field: "region", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
+    {field: "region", filter: true},
     {field: "level", filter: true},
     {field: "baseXp", filter: true},
     {field: "estXP", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
