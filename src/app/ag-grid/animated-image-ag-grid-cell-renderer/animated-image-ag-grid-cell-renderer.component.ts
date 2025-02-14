@@ -1,13 +1,11 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { ICellRendererAngularComp } from 'ag-grid-angular';
 import { ICellRendererParams } from 'ag-grid-community';
-import { NgOptimizedImage } from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'fo2tools-animated-image-ag-grid-cell-renderer',
   imports: [
-    NgOptimizedImage
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import {
   AllCommunityModule,
   ColDef,
@@ -35,10 +35,98 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 })
 export class PageMobValueComponent {
 
+
+  gridMode = signal(GridModeEnum.All);
+
+  hideGoldColumns = computed(() => {
+    const gm = this.gridMode();
+    return gm != GridModeEnum.All && gm != GridModeEnum.Gold;
+  });
+  hideXpColumns = computed(() => {
+    const gm = this.gridMode();
+    return gm != GridModeEnum.All && gm != GridModeEnum.XP;
+  });
+  hideFactionXpColumns = computed(() => {
+    const gm = this.gridMode();
+    return gm != GridModeEnum.All && gm != GridModeEnum.FactionXP;
+  });
+
+
   lvl = signal<number>(30);
   dps = signal(200);
 
   mobData = inject(MobDataService);
+
+  // Column Definitions: Defines the columns to be displayed.
+  colDefs = computed<ColDef[]>(() => [
+    {field: "image", width: 32, cellRenderer: AnimatedImageAgGridCellRendererComponent},
+    {field: "name"},
+    {field: "region", filter: true},
+    {field: "level", filter: true},
+    {field: "baseXp", hide: this.hideXpColumns(), filter: true},
+    {
+      field: "estXP",
+      hide: this.hideXpColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {field: "hp", filter: true},
+    {
+      field: "xpToHpRatio",
+      hide: this.hideXpColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {field: "goldMin", hide: this.hideGoldColumns()},
+    {field: "goldMax", hide: this.hideGoldColumns()},
+    {
+      field: "goldAvg",
+      hide: this.hideGoldColumns(),
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {
+      field: "goldPerHp",
+      hide: this.hideGoldColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {
+      field: "dropValue",
+      hide: this.hideGoldColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {
+      field: "overallAvgValue",
+      hide: this.hideGoldColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {
+      field: "valuePerHp",
+      hide: this.hideGoldColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {
+      field: "valuePerSecond",
+      hide: this.hideGoldColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+    {field: "faction", hide: this.hideFactionXpColumns(), filter: true},
+    {field: "factionXp", hide: this.hideFactionXpColumns(), filter: true},
+    {
+      field: "factionXpToHpRatio",
+      hide: this.hideFactionXpColumns(),
+      filter: true,
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
+  ]);
+
+  gridOptions = signal<GridOptions<MobRow> | undefined>({
+    rowHeight: 64
+  });
 
   autoSizeStrategy: SizeColumnsToContentStrategy = {
     type: 'fitCellContents'
@@ -125,34 +213,10 @@ export class PageMobValueComponent {
 
   rowData = signal<MobRow[]>([])
 
-  // Column Definitions: Defines the columns to be displayed.
-  colDefs: ColDef[] = [
-    {field: "image", width: 32, cellRenderer: AnimatedImageAgGridCellRendererComponent},
-    {field: "name"},
-    {field: "region", filter: true},
-    {field: "level", filter: true},
-    {field: "baseXp", filter: true},
-    {field: "estXP", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "hp", filter: true},
-    {field: "xpToHpRatio", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "goldMin"},
-    {field: "goldMax"},
-    {field: "goldAvg", valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "goldPerHp", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "dropValue", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "overallAvgValue", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "valuePerHp", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "valuePerSecond", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-    {field: "faction", filter: true},
-    {field: "factionXp", filter: true},
-    {field: "factionXpToHpRatio", filter: true, valueFormatter: (params) => this.roundNum(params.value).toString()},
-  ];
-
   getRowId: GetRowIdFunc = (params: GetRowIdParams) =>
     String(params.data.id);
-  gridOptions = signal<GridOptions<any> | undefined>({
-    rowHeight: 64,
-  });
+
+  enumGridMode = GridModeEnum;
 
 
 }
@@ -178,4 +242,11 @@ export interface MobRow {
   faction: string;
   factionXp: number;
   factionXpToHpRatio: number;
+}
+
+export enum GridModeEnum {
+  All,
+  Gold,
+  XP,
+  FactionXP,
 }

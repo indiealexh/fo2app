@@ -7,13 +7,22 @@
     <label for="lvl-tb">Player Level</label>
     <input id="lvl-tb" type="number" [ngModel]="lvl()" (ngModelChange)="lvl.set($event)">
   </div>
+  <div class="stacked">
+    <label for="display-mode">Display Mode</label>
+    <select id="display-mode" [(ngModel)]="gridMode">
+      <option [value]="enumGridMode.All">All</option>
+      <option [value]="enumGridMode.Gold">Gold</option>
+      <option [value]="enumGridMode.XP">XP</option>
+      <option [value]="enumGridMode.FactionXP">FactionXP</option>
+    </select>
+  </div>
 
 </div>
 
 <ag-grid-angular
   style="width: 100%; height: 100%;"
   [rowData]="rowData()"
-  [columnDefs]="colDefs" [theme]="myTheme" [autoSizeStrategy]="autoSizeStrategy"
+  [columnDefs]="colDefs()" [theme]="myTheme" [autoSizeStrategy]="autoSizeStrategy"
   [getRowId]="getRowId"
   [gridOptions]="gridOptions()"
 ></ag-grid-angular>
