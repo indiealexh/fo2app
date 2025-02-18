@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1739596606929,
+  "timestamp": 1739872379369,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-VN3AZEUR.js",
+        "/main-QBKKECKN.js",
         "/manifest.webmanifest",
         "/styles-CCFDLAVX.css"
       ],
@@ -32,15 +32,7 @@
         "/apple-touch-icon.png",
         "/f2logo.png",
         "/favicon-16x16.png",
-        "/favicon-32x32.png",
-        "/icons/icon-128x128.png",
-        "/icons/icon-144x144.png",
-        "/icons/icon-152x152.png",
-        "/icons/icon-192x192.png",
-        "/icons/icon-384x384.png",
-        "/icons/icon-512x512.png",
-        "/icons/icon-72x72.png",
-        "/icons/icon-96x96.png"
+        "/favicon-32x32.png"
       ],
       "patterns": []
     }
@@ -54,17 +46,9 @@
     "/favicon-16x16.png": "7c3911ff537708f6bbbd8cc4b9f87db687fbd388",
     "/favicon-32x32.png": "b3114b2399b6f9edba3e56054a134194adcc4776",
     "/favicon.ico": "066085df28ea32911679a425eb2cd850d7001e30",
-    "/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
-    "/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
-    "/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
-    "/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
-    "/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
-    "/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
-    "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
-    "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/index.html": "b10e12949a41d1021cce98d7afdcae384c371b12",
-    "/main-VN3AZEUR.js": "41e13a99f457f33724cc432c2196721cd6a10fff",
-    "/manifest.webmanifest": "5080744ed4d14f96ef6ce86a71c7af44046fb636",
+    "/index.html": "e6a607419c2b6d73f94c1f599b8e6b0aad77fb0c",
+    "/main-QBKKECKN.js": "69f51ecd5668593f9ef08fbf039580337257caad",
+    "/manifest.webmanifest": "48ab4b0a3cca02d5731041584702c7f5e1178d38",
     "/styles-CCFDLAVX.css": "f218ae03ee79331973e9f981c02b46279467fb02"
   },
   "navigationUrls": [
