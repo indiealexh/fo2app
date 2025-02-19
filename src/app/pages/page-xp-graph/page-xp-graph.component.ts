@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { AgCharts } from 'ag-charts-angular';
-import { AgChartOptions } from 'ag-charts-community';
+import { AgCartesianSeriesOptions, AgChartOptions, AgStandaloneSeriesOptions } from 'ag-charts-community';
 import { LVL_15 } from './data/lvl-15';
 import { LVL_16 } from './data/lvl-16';
 import { LVL_17 } from './data/lvl-17';
@@ -16,6 +16,7 @@ import { LVL_65 } from './data/lvl-65';
 import { LVL_26 } from './data/lvl-26';
 import { LVL_27 } from './data/lvl-27';
 import { calcAllPositiveXP } from '../../xp-calc';
+import { ALL_DATA } from './data/all-data';
 
 @Component({
   selector: 'fo2tools-page-xp-graph',
@@ -56,107 +57,32 @@ export class PageXpGraphComponent {
       }
     ],
     series: [
-      {
-        type: 'line',
-        data: LVL_65.map(d => new MobXPDrop(d)),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL65'
-      },
-      {
-        type: 'line',
-        data: [...LVL_27, ...calcAllPositiveXP(27)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL27'
-      },
-      {
-        type: 'line',
-        data: [...LVL_26, ...calcAllPositiveXP(26)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL26'
-      },
-      {
-        type: 'line',
-        data: [...LVL_25, ...calcAllPositiveXP(25)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL25'
-      },
-      {
-        type: 'line',
-        data: [...LVL_24, ...calcAllPositiveXP(24)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL24'
-      },
-      {
-        type: 'line',
-        data: [...LVL_23, ...calcAllPositiveXP(23)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL23'
-      },
-      {
-        type: 'line',
-        data: [...LVL_22, ...calcAllPositiveXP(22)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL22'
-      },
-      {
-        type: 'line',
-        data: [...LVL_21, ...calcAllPositiveXP(21)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL21'
-      },
-      {
-        type: 'line',
-        data: [...LVL_20, ...calcAllPositiveXP(20)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL20'
-      },
-      {
-        type: 'line',
-        data: [...LVL_19, ...calcAllPositiveXP(19)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL19'
-      },
-      {
-        type: 'line',
-        data: [...LVL_18, ...calcAllPositiveXP(18)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL18'
-      },
-      {
-        type: 'line',
-        data: [...LVL_17, ...calcAllPositiveXP(17)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL17'
-      },
-      {
-        type: 'line',
-        data: [...LVL_16, ...calcAllPositiveXP(16)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL16'
-      },
-      {
-        type: 'line',
-        data: [...LVL_15, ...calcAllPositiveXP(15)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
-        xKey: 'lvlOffset',
-        yKey: 'xp',
-        yName: 'PL15'
-      }
+      ...this.generateSeries(),
     ]
 
   });
+
+  private static readonly maxLvl: number = 70;
+
+  private generateSeries(): AgCartesianSeriesOptions[] {
+    const series: AgCartesianSeriesOptions[] = [];
+    console.debug("Generating series")
+
+    for (let i = 1; i <= PageXpGraphComponent.maxLvl; i++) {
+      console.debug("Generating series for level", i);
+      series.push(
+        {
+          type: 'line',
+          data: [...ALL_DATA.filter(v => v.playerLvl === i), ...calcAllPositiveXP(i)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
+          xKey: 'lvlOffset',
+          yKey: 'xp',
+          yName: 'PL' + i
+        }
+      );
+    }
+    console.debug("Series generated",series);
+    return series;
+  }
 
 }
 
