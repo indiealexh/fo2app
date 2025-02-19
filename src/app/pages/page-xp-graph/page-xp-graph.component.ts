@@ -10,6 +10,9 @@ import { LVL_20 } from './data/lvl-20';
 import { LVL_21 } from './data/lvl-21';
 import { LVL_22 } from './data/lvl-22';
 import { LVL_23 } from './data/lvl-23';
+import { LVL_24 } from './data/lvl-24';
+import { LVL_25 } from './data/lvl-25';
+import { LVL_65 } from './data/lvl-65';
 
 @Component({
   selector: 'fo2tools-page-xp-graph',
@@ -50,6 +53,27 @@ export class PageXpGraphComponent {
       }
     ],
     series: [
+      {
+        type: 'line',
+        data: LVL_65.map(d => new MobXPDrop(d)),
+        xKey: 'lvlOffset',
+        yKey: 'xp',
+        yName: 'PL65'
+      },
+      {
+        type: 'line',
+        data: LVL_25.map(d => new MobXPDrop(d)),
+        xKey: 'lvlOffset',
+        yKey: 'xp',
+        yName: 'PL25'
+      },
+      {
+        type: 'line',
+        data: LVL_24.map(d => new MobXPDrop(d)),
+        xKey: 'lvlOffset',
+        yKey: 'xp',
+        yName: 'PL24'
+      },
       {
         type: 'line',
         data: LVL_23.map(d => new MobXPDrop(d)),
