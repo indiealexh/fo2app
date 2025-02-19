@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import {
   AnimatedImageAgGridCellRendererComponent
 } from '../../ag-grid/animated-image-ag-grid-cell-renderer/animated-image-ag-grid-cell-renderer.component';
+import { calcXPDrop } from '../../xp-calc';
 
 
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -159,9 +160,9 @@ export class PageMobValueComponent {
             overallAvgValue: overallAvgValue,
             valuePerHp: valuePerHp,
             valuePerSecond: valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1)),
-            xpToHpRatio: this.calcXPDrop(m.level ?? 0, this.lvl()) / (m.health ?? 0),
+            xpToHpRatio: calcXPDrop(m.level ?? 0, this.lvl()) / (m.health ?? 0),
             baseXp: baseXP,
-            estXP: this.calcXPDrop(m.level ?? 0, this.lvl()),
+            estXP: calcXPDrop(m.level ?? 0, this.lvl()),
             faction: m.faction?.name ?? "Unknown",
             factionXp: m.factionXp ?? 0,
             factionXpToHpRatio: (m.factionXp ?? 0) / (m.health ?? 0),
@@ -193,21 +194,6 @@ export class PageMobValueComponent {
     }
 
     return gold;
-  }
-
-  calcBaseXP(mobLevel: number) {
-    return (5 * (mobLevel - 1)) + 50;
-  }
-
-  calcXPDrop(mobLevel: number, playerLevel: number) {
-    const lvlDiff = mobLevel - playerLevel;
-    if (lvlDiff > 10) {
-      return 0;
-    }
-    // This only works accurately when the players level is less than the mobs, but close enough for now
-    const xpAdjustPercent = Math.min(Math.max(0.05 * lvlDiff, -1), 1);
-    const baseXp = this.calcBaseXP(mobLevel);
-    return Math.round(baseXp + (baseXp * xpAdjustPercent));
   }
 
 
