@@ -13,6 +13,7 @@ import { LVL_25 } from './lvl-25';
 import { LVL_24 } from './lvl-24';
 import { LVL_23 } from './lvl-23';
 import { LVL_22 } from './lvl-22';
+import { LVL_28 } from './lvl-28';
 
 export const ALL_DATA: IMobXPDrop[] = [
   ...LVL_15,
@@ -28,5 +29,6 @@ export const ALL_DATA: IMobXPDrop[] = [
   ...LVL_25,
   ...LVL_26,
   ...LVL_27,
+  ...LVL_28,
   ...LVL_65,
 ];

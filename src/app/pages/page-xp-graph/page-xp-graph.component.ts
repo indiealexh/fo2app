@@ -76,7 +76,10 @@ export class PageXpGraphComponent {
           data: [...ALL_DATA.filter(v => v.playerLvl === i), ...calcAllPositiveXP(i)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
           xKey: 'lvlOffset',
           yKey: 'xp',
-          yName: 'PL' + i
+          yName: 'PL' + i,
+          interpolation: {
+            type: 'smooth'
+          },
         }
       );
     }
