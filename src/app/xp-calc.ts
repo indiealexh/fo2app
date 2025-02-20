@@ -9,7 +9,7 @@ export function calcXPDrop(mobLevel: number, playerLevel: number) {
   const lvlDiff = mobLevel - playerLevel;
   if (lvlDiff > 10) {
     // XP is capped at 10 lvls above player level
-    return 0;x
+    return 0;
   }
   const baseXp = calcBaseXP(mobLevel);
   if (lvlDiff >= 0) {
