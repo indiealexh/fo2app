@@ -81,6 +81,13 @@ export class PageMobValueComponent {
       filter: true,
       valueFormatter: (params) => this.roundNum(params.value).toString()
     },
+    {
+      field: "xpPerMinute",
+      headerName: "XP/m",
+      headerTooltip: "Estimated XP per second, does not account for spawn rate or mob count",
+      hide: this.hideXpColumns(),
+      valueFormatter: (params) => this.roundNum(params.value).toString()
+    },
     {field: "goldMin", hide: this.hideGoldColumns()},
     {field: "goldMax", hide: this.hideGoldColumns()},
     {
@@ -113,8 +120,8 @@ export class PageMobValueComponent {
       valueFormatter: (params) => this.roundNum(params.value).toString()
     },
     {
-      field: "valuePerSecond",
-      headerName: "Value/s",
+      field: "valuePerMinute",
+      headerName: "Value/m",
       headerTooltip: "Value per second, does not account for spawn rate or mob count",
       hide: this.hideGoldColumns(),
       filter: true,
@@ -152,6 +159,13 @@ export class PageMobValueComponent {
           const region = m.locations?.at(0)?.area?.name ?? "Unknown";
           const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0;
           const estXP = calcXPDrop(m.level ?? 0, this.lvl());
+          const xpPerHp = estXP / (m.health ?? 0);
+
+          const killsPerSecond = this.dps() / (m.health ?? 1);
+          const killsPerMinute = killsPerSecond * 60;
+
+          // DPS / HP = Kills Per second
+
           return ({
             id: m.id,
             image: `https://art.fantasyonline2.com/textures/enemies/${m.spriteName}.png`,
@@ -166,10 +180,11 @@ export class PageMobValueComponent {
             dropValue: dropValue,
             overallAvgValue: overallAvgValue,
             valuePerHp: valuePerHp,
-            valuePerSecond: valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1)),
-            xpToHpRatio: estXP / (m.health ?? 0),
+            valuePerMinute: dropValue * killsPerMinute,
+            xpToHpRatio: xpPerHp,
             baseXp: baseXP,
             estXP: estXP,
+            xpPerMinute: estXP * killsPerMinute,
             faction: m.faction?.name ?? "Unknown",
             factionXp: m.factionXp ?? 0,
             factionXpToHpRatio: (m.factionXp ?? 0) / (m.health ?? 0),
@@ -228,10 +243,11 @@ export interface MobRow {
   dropValue: number;
   overallAvgValue: number;
   valuePerHp: number;
-  valuePerSecond: number;
+  valuePerMinute: number;
   xpToHpRatio: number;
   baseXp: number;
   estXP: number;
+  xpPerMinute: number;
   faction: string;
   factionXp: number;
   factionXpToHpRatio: number;
