@@ -145,6 +145,7 @@ export class PageMobValueComponent {
           const valuePerHp = overallAvgValue / (m.health ?? 0);
           const region = m.locations?.at(0)?.area?.name ?? "Unknown";
           const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0;
+          const estXP = calcXPDrop(m.level ?? 0, this.lvl());
           return ({
             id: m.id,
             image: `https://art.fantasyonline2.com/textures/enemies/${m.spriteName}.png`,
@@ -160,9 +161,9 @@ export class PageMobValueComponent {
             overallAvgValue: overallAvgValue,
             valuePerHp: valuePerHp,
             valuePerSecond: valuePerHp * ((m.atkSpeed !== 0 ? this.dps() : 1)),
-            xpToHpRatio: calcXPDrop(m.level ?? 0, this.lvl()) / (m.health ?? 0),
+            xpToHpRatio: estXP / (m.health ?? 0),
             baseXp: baseXP,
-            estXP: calcXPDrop(m.level ?? 0, this.lvl()),
+            estXP: estXP,
             faction: m.faction?.name ?? "Unknown",
             factionXp: m.factionXp ?? 0,
             factionXpToHpRatio: (m.factionXp ?? 0) / (m.health ?? 0),
