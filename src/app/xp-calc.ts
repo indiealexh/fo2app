@@ -35,3 +35,21 @@ export function calcAllPositiveXP(playerLevel: number): IMobXPDrop[] {
   console.log(xpDrops);
   return xpDrops;
 }
+
+export function calcAllNegativeXP(playerLevel: number): IMobXPDrop[] {
+  const xpDrops: IMobXPDrop[] = [];
+
+  for (let i = playerLevel - 1; i >= playerLevel - 20; i--) {
+    const item = {
+      playerLvl: playerLevel,
+      mobLvl: i,
+      xp: calcXPDrop(i, playerLevel)
+    };
+    xpDrops.push(item);
+    if (item.xp <= 0) {
+      break;
+    }
+  }
+  console.log(xpDrops);
+  return xpDrops;
+}

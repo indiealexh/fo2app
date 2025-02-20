@@ -15,7 +15,7 @@ import { LVL_25 } from './data/lvl-25';
 import { LVL_65 } from './data/lvl-65';
 import { LVL_26 } from './data/lvl-26';
 import { LVL_27 } from './data/lvl-27';
-import { calcAllPositiveXP } from '../../xp-calc';
+import { calcAllNegativeXP, calcAllPositiveXP } from '../../xp-calc';
 import { ALL_DATA } from './data/all-data';
 
 @Component({
@@ -73,7 +73,8 @@ export class PageXpGraphComponent {
       series.push(
         {
           type: 'line',
-          data: [...ALL_DATA.filter(v => v.playerLvl === i), ...calcAllPositiveXP(i)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
+          // ...ALL_DATA.filter(v => v.playerLvl === i),
+          data: [ ...calcAllPositiveXP(i), ...calcAllNegativeXP(i)].map(d => new MobXPDrop(d)).sort((a, b) => a.lvlOffset - b.lvlOffset),
           xKey: 'lvlOffset',
           yKey: 'xp',
           yName: 'PL' + i,
