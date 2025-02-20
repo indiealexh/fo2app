@@ -17,6 +17,7 @@ import {
   AnimatedImageAgGridCellRendererComponent
 } from '../../ag-grid/animated-image-ag-grid-cell-renderer/animated-image-ag-grid-cell-renderer.component';
 import { calcXPDrop } from '../../xp-calc';
+import { UserDataService } from '../../services/user-data.service';
 
 
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -35,7 +36,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 
 })
 export class PageMobValueComponent {
-
+  userDataService = inject(UserDataService);
 
   gridMode = signal(GridModeEnum.All);
 
@@ -53,8 +54,8 @@ export class PageMobValueComponent {
   });
 
 
-  lvl = signal<number>(30);
-  dps = signal(200);
+  lvl = this.userDataService.userLevel;
+  dps = this.userDataService.userDPS;
 
   mobData = inject(MobDataService);
 
