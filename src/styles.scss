@@ -12,3 +12,37 @@ body {
   color: #f1f1f1;
 }
 
+fieldset.radio-button-group {
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #2a2154;
+
+  & > legend {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    background-color: #2a2154;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #f1f1f1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    transition: background-color 0.5s ease-in-out;
+  }
+  input[type="radio"]:checked + label {
+    background-color: #f1f1f1;
+    color: #0E0B1C;
+  }
+}

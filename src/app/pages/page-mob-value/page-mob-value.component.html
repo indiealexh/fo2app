@@ -8,13 +8,24 @@
     <input id="lvl-tb" type="number" [ngModel]="lvl()" (ngModelChange)="lvl.set($event)">
   </div>
   <div class="stacked">
-    <label for="display-mode">Display Mode</label>
-    <select id="display-mode" [(ngModel)]="gridMode">
-      <option [value]="enumGridMode.All">All</option>
-      <option [value]="enumGridMode.Gold">Gold</option>
-      <option [value]="enumGridMode.XP">XP</option>
-      <option [value]="enumGridMode.FactionXP">FactionXP</option>
-    </select>
+<!--    <label for="display-mode">Display Mode</label>-->
+<!--    <select id="display-mode" [(ngModel)]="gridMode">-->
+<!--      <option [value]="enumGridMode.All">All</option>-->
+<!--      <option [value]="enumGridMode.Gold">Gold</option>-->
+<!--      <option [value]="enumGridMode.XP">XP</option>-->
+<!--      <option [value]="enumGridMode.FactionXP">FactionXP</option>-->
+<!--    </select>-->
+    <fieldset class="radio-button-group">
+      <legend>Display Mode</legend>
+      <input type="radio" name="dm" id="dm-all" [value]="enumGridMode.All" [(ngModel)]="gridMode">
+      <label for="dm-all">All</label>
+      <input type="radio" name="dm" id="dm-gold" [value]="enumGridMode.Gold" [(ngModel)]="gridMode">
+      <label for="dm-gold">Gold</label>
+      <input type="radio" name="dm" id="dm-xp" [value]="enumGridMode.XP" [(ngModel)]="gridMode">
+      <label for="dm-xp">XP</label>
+      <input type="radio" name="dm" id="dm-factionxp" [value]="enumGridMode.FactionXP" [(ngModel)]="gridMode">
+      <label for="dm-factionxp">Faction XP</label>
+    </fieldset>
   </div>
 
 </div>
