@@ -64,9 +64,10 @@ export class PageMobValueComponent {
     {field: "name"},
     {field: "region", filter: true},
     {field: "level", filter: true},
-    {field: "baseXp", hide: this.hideXpColumns(), filter: true},
     {
       field: "estXP",
+      headerName: "XP",
+      headerTooltip: "Estimated XP Drop based on player level and mob level",
       hide: this.hideXpColumns(),
       filter: true,
       valueFormatter: (params) => this.roundNum(params.value).toString()
@@ -74,6 +75,8 @@ export class PageMobValueComponent {
     {field: "hp", filter: true},
     {
       field: "xpToHpRatio",
+      headerName: "XP:HP",
+      headerTooltip: "Estimated XP to HP Ratio",
       hide: this.hideXpColumns(),
       filter: true,
       valueFormatter: (params) => this.roundNum(params.value).toString()
@@ -111,6 +114,8 @@ export class PageMobValueComponent {
     },
     {
       field: "valuePerSecond",
+      headerName: "Value/s",
+      headerTooltip: "Value per second, does not account for spawn rate or mob count",
       hide: this.hideGoldColumns(),
       filter: true,
       valueFormatter: (params) => this.roundNum(params.value).toString()
@@ -119,6 +124,7 @@ export class PageMobValueComponent {
     {field: "factionXp", hide: this.hideFactionXpColumns(), filter: true},
     {
       field: "factionXpToHpRatio",
+      headerName: "Faction XP:HP",
       hide: this.hideFactionXpColumns(),
       filter: true,
       valueFormatter: (params) => this.roundNum(params.value).toString()
