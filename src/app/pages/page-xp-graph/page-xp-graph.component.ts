@@ -28,8 +28,12 @@ import { ALL_DATA } from './data/all-data';
 })
 export class PageXpGraphComponent {
   options = signal<AgChartOptions>({
+    background: {
+      fill: '#0E0B1C',
+    },
+    theme: 'ag-material-dark',
     title: {
-      text: 'Player Overleveled - Mob XP Drop Graph'
+      text: 'Player Level - Mob XP Drop Graph'
     },
     axes: [
       {
