@@ -21,14 +21,15 @@ input {
 }
 fieldset.radio-button-group {
   margin: 0.25rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
   border-radius: 0.25rem;
   border: none;
   background-color: #2a2154;
 
   & > legend {
     border-radius: 0.25rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.125rem 0.5rem;
+    transform: translateX(-0.5rem) translateY(0.25rem);
     border: none;
     background-color: #2a2154;
   }
