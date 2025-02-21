@@ -1,20 +1,14 @@
 <div class="shelved" style="padding: 0.5rem;">
-  <div class="stacked">
+  <div class="stacked" style="width: 120px">
     <label for="dps-tb">Player DPS</label>
-    <input id="dps-tb" type="number" [ngModel]="dps()" (ngModelChange)="dps.set($event)">
+    <input id="dps-tb" type="number" size="4" min="1" [ngModel]="dps()" (ngModelChange)="dps.set($event)">
   </div>
-  <div class="stacked">
+  <div class="stacked" style="width: 120px">
     <label for="lvl-tb">Player Level</label>
-    <input id="lvl-tb" type="number" [ngModel]="lvl()" (ngModelChange)="lvl.set($event)">
+    <input id="lvl-tb" size="3" min="1" type="number" [ngModel]="lvl()" (ngModelChange)="lvl.set($event)">
   </div>
+  <div style="flex: 1;"></div>
   <div class="stacked">
-<!--    <label for="display-mode">Display Mode</label>-->
-<!--    <select id="display-mode" [(ngModel)]="gridMode">-->
-<!--      <option [value]="enumGridMode.All">All</option>-->
-<!--      <option [value]="enumGridMode.Gold">Gold</option>-->
-<!--      <option [value]="enumGridMode.XP">XP</option>-->
-<!--      <option [value]="enumGridMode.FactionXP">FactionXP</option>-->
-<!--    </select>-->
     <fieldset class="radio-button-group">
       <legend>Display Mode</legend>
       <input type="radio" name="dm" id="dm-all" [value]="enumGridMode.All" [(ngModel)]="gridMode">
