@@ -31,9 +31,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
   ],
   templateUrl: './page-mob-value.component.html',
   styleUrl: './page-mob-value.component.scss',
-
   changeDetection: ChangeDetectionStrategy.OnPush,
-
 })
 export class PageMobValueComponent {
   userDataService = inject(UserDataService);
