@@ -1,6 +1,6 @@
 <header>
   <div><img src="./f2logo.png" alt="FO2.app Logo" height="64"></div>
-  FO2.app v{{appVersion}}
+  FO2.app v{{ appVersion }}
   <nav>
     <ul>
       <li><a routerLink="/mobs/value">Mob Value</a></li>
@@ -12,10 +12,15 @@
   <router-outlet/>
 </main>
 <footer>Fantasy Online 2 Assets are copyright of Pixel Games LLC; Original Data Collected from <a
-  href="https://fo2db.com/">fo2db</a>; Distributed under the MIT License, FO2.app created by and Copyright 2025 <a href="https://indiealexh.com">indiealexh</a>; <a
+  href="https://fo2db.com/">fo2db</a>; Distributed under the MIT License, FO2.app created by and Copyright 2025 <a
+  href="https://indiealexh.com">indiealexh</a>; <a
   href="https://github.com/indiealexh/fo2app">GitHub Repo</a>;
 </footer>
 <dialog id="version-ready-dialog" #vrd>
   <p>FO2.App has a new version, would you like to load it now?</p>
-  <button (click)="updater.activateUpdate()">Yes</button><button autofocus (click)="vrd.close()">I'll Reload later</button>
+  <button (click)="updater.activateUpdate()">Yes</button>
+  &nbsp;
+  <button autofocus (click)="vrd.close()">I'll Reload
+    later
+  </button>
 </dialog>
