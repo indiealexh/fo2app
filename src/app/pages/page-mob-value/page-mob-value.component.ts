@@ -160,6 +160,7 @@ export class PageMobValueComponent {
           const estXP = calcXPDrop(m.level ?? 0, this.lvl());
           const xpPerHp = estXP / (m.health ?? 0);
           let killsPerSecond = this.dps() / (m.health ?? 1);
+          // If the mobs attackspeed is 0 then it likley is a chest, or inanimate object and we should assume the DPS is 1
           if (m.atkSpeed == 0) {
             killsPerSecond = 1 / (m.health ?? 1);
           }
