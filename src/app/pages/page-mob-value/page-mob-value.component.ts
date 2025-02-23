@@ -151,7 +151,7 @@ export class PageMobValueComponent {
       if (data) {
 
         this.rowData.set(data.map(m => {
-          const goldAvg = (m.goldMin ?? 0) + (m.goldMax ?? 0) / 2;
+          const goldAvg = ((m.goldMin ?? 0) + (m.goldMax ?? 0)) / 2;
           const dropValue = m.drops ? this.itemValueChangeToGold(m.drops) : 0;
           const overallAvgValue = dropValue + goldAvg;
           const valuePerHp = overallAvgValue / (m.health ?? 0);
