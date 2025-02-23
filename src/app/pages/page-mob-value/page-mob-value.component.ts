@@ -162,7 +162,7 @@ export class PageMobValueComponent {
           let killsPerSecond = this.dps() / (m.health ?? 1);
           // If the mobs attackspeed is 0 then it likley is a chest, or inanimate object and we should assume the DPS is 1
           if (m.atkSpeed == 0) {
-            killsPerSecond = 1 / (m.health ?? 1);
+            killsPerSecond = 1.5 / (m.health ?? 1);
           }
           const killsPerMinute = killsPerSecond * 60;
 
