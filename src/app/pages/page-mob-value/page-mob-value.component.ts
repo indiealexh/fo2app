@@ -159,8 +159,10 @@ export class PageMobValueComponent {
           const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0;
           const estXP = calcXPDrop(m.level ?? 0, this.lvl());
           const xpPerHp = estXP / (m.health ?? 0);
-
           const killsPerSecond = this.dps() / (m.health ?? 1);
+          if (m.atkSpeed == 0) {
+            const killsPerSecond = 1 / (m.health ?? 1);
+          }
           const killsPerMinute = killsPerSecond * 60;
 
           // DPS / HP = Kills Per second
