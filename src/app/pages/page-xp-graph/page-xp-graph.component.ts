@@ -19,7 +19,7 @@ import { calcAllNegativeXP, calcAllPositiveXP } from '../../xp-calc';
 import { ALL_DATA } from './data/all-data';
 
 @Component({
-  selector: 'fo2tools-page-xp-graph',
+  selector: 'fo2app-page-xp-graph',
   imports: [
     AgCharts
   ],

@@ -4,7 +4,7 @@ import { ICellRendererParams } from 'ag-grid-community';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'fo2tools-animated-image-ag-grid-cell-renderer',
+  selector: 'fo2app-animated-image-ag-grid-cell-renderer',
   imports: [
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,

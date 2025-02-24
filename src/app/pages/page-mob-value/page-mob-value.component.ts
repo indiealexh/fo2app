@@ -24,7 +24,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 
 
 @Component({
-  selector: 'fo2tools-page-mob-value',
+  selector: 'fo2app-page-mob-value',
   imports: [
     AgGridAngular,
     FormsModule

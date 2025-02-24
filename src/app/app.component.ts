@@ -5,7 +5,7 @@ import { UpdaterService } from './services/updater.service';
 
 
 @Component({
-  selector: 'fo2tools-root',
+  selector: 'fo2app-root',
   imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
