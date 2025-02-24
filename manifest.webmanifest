@@ -1,6 +1,6 @@
 {
-  "name": "fo2tools",
-  "short_name": "fo2tools",
+  "name": "fo2.app",
+  "short_name": "fo2app",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
