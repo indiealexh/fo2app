@@ -1,8 +1,8 @@
 {
   "name": "fo2.app",
   "short_name": "fo2app",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#0E0B1C",
+  "background_color": "#0E0B1C",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
