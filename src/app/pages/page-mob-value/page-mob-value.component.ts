@@ -11,13 +11,13 @@ import {
 } from 'ag-grid-community';
 import { MobDataService } from '../../services/mob-data.service';
 import { AgGridAngular } from 'ag-grid-angular';
-import { Drop } from '../../models/mobs';
 import { FormsModule } from '@angular/forms';
 import {
   AnimatedImageAgGridCellRendererComponent
 } from '../../ag-grid/animated-image-ag-grid-cell-renderer/animated-image-ag-grid-cell-renderer.component';
 import { calcXPDrop } from '../../xp-calc';
 import { UserDataService } from '../../services/user-data.service';
+import { ItemDrop } from '../../models/fo2-data';
 
 
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -151,17 +151,27 @@ export class PageMobValueComponent {
       if (data) {
 
         this.rowData.set(data.map(m => {
-          const goldAvg = ((m.goldMin ?? 0) + (m.goldMax ?? 0)) / 2;
+          let goldMin: number = 0;
+          let goldMax: number = 0;
+          if (m.gold instanceof Array) {
+            goldMin = m.gold[0];
+            goldMax = m.gold[1];
+          } else if (typeof m.gold === "number") {
+            goldMin = m.gold;
+            goldMax = m.gold;
+          }
+
+          const goldAvg = ((goldMin ?? 0) + (goldMax ?? 0)) / 2;
           const dropValue = m.drops ? this.itemValueChangeToGold(m.drops) : 0;
           const overallAvgValue = dropValue + goldAvg;
           const valuePerHp = overallAvgValue / (m.health ?? 0);
-          const region = m.locations?.at(0)?.area?.name ?? "Unknown";
+          const region = m.zones.at(0)?.name ?? "Unknown";
           const baseXP = m.level ? ((5 * (m.level - 1)) + 50) : 0;
           const estXP = calcXPDrop(m.level ?? 0, this.lvl());
           const xpPerHp = estXP / (m.health ?? 0);
           let killsPerSecond = this.dps() / (m.health ?? 1);
           // If the mobs attackspeed is 0 then it likley is a chest, or inanimate object and we should assume the DPS is 1
-          if (m.atkSpeed == 0) {
+          if (m.attackSpeed == 0) {
             killsPerSecond = 1.5 / (m.health ?? 1);
           }
           const killsPerMinute = killsPerSecond * 60;
@@ -170,13 +180,13 @@ export class PageMobValueComponent {
 
           return ({
             id: m.id,
-            image: `https://art.fantasyonline2.com/textures/enemies/${m.spriteName}.png`,
+            image: `https://art.fantasyonline2.com/textures/enemies/${m.spriteFilename}.png`,
             name: m.name,
             region: region,
             level: m.level,
             hp: m.health,
-            goldMin: m.goldMin,
-            goldMax: m.goldMax,
+            goldMin: goldMin,
+            goldMax: goldMax,
             goldAvg: goldAvg,
             goldPerHp: goldAvg / (m.health ?? 0),
             dropValue: dropValue,
@@ -210,11 +220,18 @@ export class PageMobValueComponent {
     return parseFloat(num.toFixed(4));
   }
 
-  itemValueChangeToGold(drops: Drop[]) {
+  itemValueChangeToGold(drops: ItemDrop[]) {
     let gold = 0;
 
     for (const drop of drops) {
-      gold += drop.item!.sellPrice! * ((drop.dropRate! / 100) * (drop.count ?? 1));
+      let avgDropRate = 0;
+      if (typeof drop.rate === "number") {
+        avgDropRate = drop.rate;
+      } else {
+        avgDropRate = (drop.rate[0] + drop.rate[1]) / 2;
+      }
+
+      gold += drop.vendorBuyPrice * ((avgDropRate / 100) * (drop.count ?? 1));
     }
 
     return gold;
