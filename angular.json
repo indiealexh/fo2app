@@ -92,8 +92,13 @@
             "scripts": []
           }
         },
+
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://fo2.app/",
+            "cname": "fo2.app"
+          }
         }
       }
     }
