@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1749236339935,
-  "index": "/index.html",
+  "timestamp": 1753981371714,
+  "index": "https://fo2.app/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,16 +11,16 @@
         "ignoreVary": true
       },
       "urls": [
-        "/chunk-DKR5L54R.js",
-        "/chunk-MOEFYKBK.js",
-        "/chunk-RZCF5FLH.js",
-        "/chunk-TCU3IE5H.js",
-        "/chunk-ZR324EFW.js",
-        "/favicon.ico",
-        "/index.html",
-        "/main-YY7JWKBZ.js",
-        "/manifest.webmanifest",
-        "/styles-YWJBUBQJ.css"
+        "https://fo2.app/chunk-MOEFYKBK.js",
+        "https://fo2.app/chunk-N3WHV6WJ.js",
+        "https://fo2.app/chunk-RZCF5FLH.js",
+        "https://fo2.app/chunk-TCU3IE5H.js",
+        "https://fo2.app/chunk-ZR324EFW.js",
+        "https://fo2.app/favicon.ico",
+        "https://fo2.app/index.html",
+        "https://fo2.app/main-XUBMMBNS.js",
+        "https://fo2.app/manifest.webmanifest",
+        "https://fo2.app/styles-YWJBUBQJ.css"
       ],
       "patterns": []
     },
@@ -32,34 +32,34 @@
         "ignoreVary": true
       },
       "urls": [
-        "/android-chrome-192x192.png",
-        "/android-chrome-512x512.png",
-        "/apple-touch-icon.png",
-        "/f2logo.png",
-        "/favicon-16x16.png",
-        "/favicon-32x32.png"
+        "https://fo2.app/android-chrome-192x192.png",
+        "https://fo2.app/android-chrome-512x512.png",
+        "https://fo2.app/apple-touch-icon.png",
+        "https://fo2.app/f2logo.png",
+        "https://fo2.app/favicon-16x16.png",
+        "https://fo2.app/favicon-32x32.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/android-chrome-192x192.png": "fc2fc5384999bd2c82a150e0a950e6ba7cba624e",
-    "/android-chrome-512x512.png": "8edd115a897d7a7eab3aeb2badc292471038850f",
-    "/apple-touch-icon.png": "8389bd9423fe36fef35ad9d686ae6689d2a20969",
-    "/chunk-DKR5L54R.js": "eb997caa1b708a2b4b970e80d246a6b861ee2cfe",
-    "/chunk-MOEFYKBK.js": "099a54747f933ec9b251454546bb85ddb7f08405",
-    "/chunk-RZCF5FLH.js": "6d35e4a82c350c69294ce7492f4d0485eae432e1",
-    "/chunk-TCU3IE5H.js": "0c83eae434c525938046a9748240451023297b27",
-    "/chunk-ZR324EFW.js": "4ec9c996a414947bb93d60d1dc9dcac5d3d9e276",
-    "/f2logo.png": "13271c72ee9b8843fc1c8e8769319e2e85a3df2a",
-    "/favicon-16x16.png": "7c3911ff537708f6bbbd8cc4b9f87db687fbd388",
-    "/favicon-32x32.png": "b3114b2399b6f9edba3e56054a134194adcc4776",
-    "/favicon.ico": "066085df28ea32911679a425eb2cd850d7001e30",
-    "/index.html": "af0d8f7c836375694a5ea7a77df932639fe54565",
-    "/main-YY7JWKBZ.js": "7a9ea69229fcaade73b01ff65c30a60a31ef03c4",
-    "/manifest.webmanifest": "56bb81cb39e0d1c040273fb9fcc057ccc77a6cc7",
-    "/styles-YWJBUBQJ.css": "785f52844f5a9a8a728f85c61419780cbb958ae9"
+    "https://fo2.app/android-chrome-192x192.png": "fc2fc5384999bd2c82a150e0a950e6ba7cba624e",
+    "https://fo2.app/android-chrome-512x512.png": "8edd115a897d7a7eab3aeb2badc292471038850f",
+    "https://fo2.app/apple-touch-icon.png": "8389bd9423fe36fef35ad9d686ae6689d2a20969",
+    "https://fo2.app/chunk-MOEFYKBK.js": "099a54747f933ec9b251454546bb85ddb7f08405",
+    "https://fo2.app/chunk-N3WHV6WJ.js": "dea9708648f4b9cd0bd890082fc9cce9e6da3285",
+    "https://fo2.app/chunk-RZCF5FLH.js": "6d35e4a82c350c69294ce7492f4d0485eae432e1",
+    "https://fo2.app/chunk-TCU3IE5H.js": "0c83eae434c525938046a9748240451023297b27",
+    "https://fo2.app/chunk-ZR324EFW.js": "4ec9c996a414947bb93d60d1dc9dcac5d3d9e276",
+    "https://fo2.app/f2logo.png": "13271c72ee9b8843fc1c8e8769319e2e85a3df2a",
+    "https://fo2.app/favicon-16x16.png": "7c3911ff537708f6bbbd8cc4b9f87db687fbd388",
+    "https://fo2.app/favicon-32x32.png": "b3114b2399b6f9edba3e56054a134194adcc4776",
+    "https://fo2.app/favicon.ico": "066085df28ea32911679a425eb2cd850d7001e30",
+    "https://fo2.app/index.html": "6883be8074ae536dd446e68475468cd083c3a1c3",
+    "https://fo2.app/main-XUBMMBNS.js": "ebebc3a6b61e23f68629172747f1a9ee80115d8a",
+    "https://fo2.app/manifest.webmanifest": "56bb81cb39e0d1c040273fb9fcc057ccc77a6cc7",
+    "https://fo2.app/styles-YWJBUBQJ.css": "785f52844f5a9a8a728f85c61419780cbb958ae9"
   },
   "navigationUrls": [
     {
